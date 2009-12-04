@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript: Octal to ASCII
+title: "Javascript: Octal to ASCII"
 ---
 
 Gareth Heyes posted a [fun little challenge](http://www.thespanner.co.uk/2007/10/10/a-bit-of-fun/) and I couldn't help but attack it. It took me longer than I thought. Not to be a spoiler, but at some point you have to convert octals to <abbr title="American Standard Code for Information Interchange">ASCII</abbr> values. Now, I have done decimal to ASCII, binary to ASCII, and even hex to ASCII, but never octal to ASCII. Searching around, I found everyone seemed to use PHP, <abbr title="Active Server Pages">ASP</abbr>, or some sort of "higher" level programming.

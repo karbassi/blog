@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tip: Recursively Open TextMate Project Folders
+title: "Tip: Recursively Open TextMate Project Folders"
 ---
 
 Quick tip time! This time it's about one of the best text editors for the mac, [TextMate](http://macromates.com/).
