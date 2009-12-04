@@ -6,7 +6,7 @@ Recently [Google Docs & Spreadsheets][1] released a [new version][2] of their wo
 
 Like always, I went snooping around to see what I could find. It's usually fun to see what they didn't implement yet. Taking a look at the [javascript source][3] (notice the link might change) I found something very interesting.
 
-{% highlight js %}
+{% highlight javascript %}
 ac[_P].Ca = function()
 {
    throw Error("[detroit.app.Application] Not implemented");

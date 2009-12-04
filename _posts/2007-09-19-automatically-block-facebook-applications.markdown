@@ -20,7 +20,7 @@ That being said, I set out to actually **block** each application invite I get. 
 
 Here's the code:
 
-{% highlight js %}
+{% highlight javascript %}
 // Auto-Block Facebook Apps
 //
 // Version 1.0

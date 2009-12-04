@@ -12,7 +12,7 @@ That being aside, I didn't enjoy the fact that Facebook now allows "apps" (appli
 
 I spent around 1 hour and whipped it up and it works better wonders. To me, it loads the page faster. Here's the code:
 
-{% highlight js %}
+{% highlight javascript %}
 // Facebook Profile Cleaner
 //
 // Version 1.0

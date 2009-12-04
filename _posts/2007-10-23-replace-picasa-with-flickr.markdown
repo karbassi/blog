@@ -12,7 +12,7 @@ Here's how I did it.
 
 **To use this script**, you need [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748) addon. Once you have it, just go here and click install: <http://userscripts.org/scripts/show/13244>.
 
-{% highlight js %}
+{% highlight javascript %}
 // Google Photo Link with Flickr
 //
 // Version 1.0
