@@ -6,7 +6,7 @@ Sometimes it's very useful to know how much content is in a directory without op
 
 In Bash:
 
-{% highlight %}
+{% highlight bash %}
 du -cks * | sort -n | awk '\''BEGIN { split("KB,MB,GB,TB", Units, ","); } { u = 1;while ($1 >= 1024){$1 = $1 / 1024;u += 1;}$1 = sprintf("%.1f %s", $1, Units[u]);print $0;}'\'' | tail -11
 {% endhighlight %}
 
