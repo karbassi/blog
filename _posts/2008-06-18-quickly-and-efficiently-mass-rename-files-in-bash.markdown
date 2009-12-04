@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Quickly, and efficiently, mass rename files in bash
+---
+Quick tip for everyone who is using Mac OS X, Unix, or anything with bash. If you want to mass rename a bunch of files, there isn't a simple way of doing it. Either you would have to do it manually (<code>mv ryan.txt steve.txt</code>) or you could use this simple line of code.
+
+{% highlight bash %}
+ls ryan.* | awk '{print("mv "$1" "$1)}' | sed 's/ryan/steve/2' | /bin/sh
+{% endhighlight %}
+
+Let me explain it quickly. Let's say you have a whole folder of files named <code>ryan.*</code> (such as ryan.txt, ryan.gif, ryan.php, ryan.asp, etc.) and you want to rename them to <code>steve.*</code>.
+
+The first part displays a list of files that match the wildcard of ryan.* then it is piped to the second part (<code>awk '{print("mv "$1" "$1)}'</code>). This part prints a list of commands such as <code>mv ryan.txt ryan.txt</code>.
+
+Well, that's close but you want to move ryan.txt to steve.txt, not itself. This is where the third part comes in. What <code>sed</code> does in this situation is replace **any** instance of ryan with steve. The last part runs the whole thing as a list of shell commands.

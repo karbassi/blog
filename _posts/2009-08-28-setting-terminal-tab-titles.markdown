@@ -1,0 +1,45 @@
+--- 
+layout: post
+title: Setting terminal tab titles
+---
+I've always hated the fact that I would have 5-10 tabs open in Terminal, and they would all say <code>bash</code>.
+
+![Mac Terminal Example](http://emberapp.com/karbassi/images/usersali-bash-10020/sizes/o.png)
+
+After doing some quick research, I stumbled on [decent solution](http://pseudogreen.org/blog/set_tab_names_in_leopard_terminal.html) on setting window and tab names in the Leopard Terminal.
+
+You can add the following code block to either your <code>.bash_profile</code> or <code>.bashrc</code>.
+
+{% highlight bash %}
+function set_window_and_tab_title
+{
+    local title="$1"
+    if [[ -z "$title" ]]; then
+        title="root"
+    fi
+
+    local tmpdir=~/Library/Caches/${FUNCNAME}_temp
+    local cmdfile="$tmpdir/$title"
+
+    # Set window title
+    echo -n -e "\e]0;${title}\a"
+
+    # Set tab title
+    if [[ -n ${CURRENT_TAB_TITLE_PID:+1} ]]; then
+        kill $CURRENT_TAB_TITLE_PID
+    fi
+    mkdir -p $tmpdir
+    ln /bin/sleep "$cmdfile"
+    "$cmdfile" 10 &
+    CURRENT_TAB_TITLE_PID=$(jobs -x echo %+)
+    disown %+
+    kill -STOP $CURRENT_TAB_TITLE_PID
+    command rm -f "$cmdfile"
+}
+
+PROMPT_COMMAND='set_window_and_tab_title "${PWD##*/}"'
+{% endhighlight %}
+
+![Shell settings](http://emberapp.com/karbassi/images/settings/sizes/m.png)
+
+Restart bash and everything should be working, hunky-dory. One problem you'll notice is that when you try to close a session, terminal will prompt you about running processes. This is a side-affect of forking the process. A quick fix is to set the <code>"Prompt before closing"</code> in <code>Preferences > Settings > Shell</code> to "Never".

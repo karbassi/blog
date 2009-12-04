@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: "Futurama: Bender's Big Score - Binary Joke"
+---
+![Bender's Big Score - Binary](http://static.flickr.com/2106/2194875030_5c85b7ca49.jpg)
+
+In (Futurama: Bender's Big Score)[http://www.imdb.com/title/tt0471711/], Bender reads off a series of 0's and 1's to travel through time. Now I won't go much into the movie, but the writers are known for their geek humor. You should really go buy the movie. It's pretty cheap at (Amazon)[http://www.amazon.com/Futurama-Benders-Score-John-DiMaggio/dp/B000UZDO62]
+
+![Bender's Big Score - Binary](http://static.flickr.com/2188/2194086733_de7712d1b5.jpg)
+
+Now, if you take the whole thing by itself, it's not a 16-bit code, but 32-bit. I believe IBM made a few super computers that handle 32-bit binary. With that said, we can't just pump it into a binary-to-ASCII converter. Watching the movies I noticed that the binary code he reads is symmetrical. If you take the first half of each line you will notice that the binary is translated to 1, 2, 3, 4, 5, and 6. Wow, that simple.
+
+
+If you type the actual string out into google, you will notice that the producers have actually registered the domain <001100010010011110100001101101110011.com> and displayed just one image. How nice of them. Unlike the site <ilovebender.com>, there is no other information on the page.
+
+They have set up a nice auto-responder to anything that goes to <bender@ilovebender.com>. It reads:
+
+>Dear New Friend,
+>
+>Thank you for writing to me, Bender. It really means a lot to me. Not many humans contact me because I am so rude and impatient. You're starting to get on my nerves now. Quit buggin' me, meatbag!
+>
+>P.S. - Buy my DVD.
+>
+>Love,
+>
+>Bender
+
+I'm glad to see writers, producers, directors, and whoever involved taking the extra measure to make the experience more enjoyable. Now go by the DVD.

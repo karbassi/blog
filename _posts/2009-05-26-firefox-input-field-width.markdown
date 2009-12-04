@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Firefox & Input Field Width
+---
+Hate the 2px difference you get when you apply a width on your input fields in Firefox?
+
+Try this in CSS:
+
+{% highlight css %}
+input, textarea, select{-moz-box-sizing: border-box;}
+{% endhighlight %}
