@@ -1,0 +1,22 @@
+---
+layout: default
+title: Mind Mining Medium
+---
+
+{% for post in paginator.posts %}
+   <div class="article">
+      <abbr class="published" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</abbr>
+      <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <div class="entry-content">{{ post.content }}</div>
+   </div>
+{% endfor %}
+
+<div class="footer">
+   {% if paginator.next_page %}
+   <a href="/page{{ paginator.next_page }}/" class="prev">&larr; older</a>
+   {% endif %}
+
+   {% if paginator.previous_page %}
+   <a href="/page{{ paginator.previous_page }}" class="next">newer &rarr;</a>
+   {% endif %}
+</div>

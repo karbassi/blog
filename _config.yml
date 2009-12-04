@@ -1,4 +1,4 @@
+markdown: rdiscount
+pygments: true
 paginate: 3
 permalink: pretty
-pygments: true
-auto: true
