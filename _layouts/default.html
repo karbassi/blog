@@ -6,13 +6,18 @@
         <meta name="author" content="Ali Karbassi">
         <link rel="stylesheet" href="/css/screen.css" media="screen">
         <link rel="stylesheet" href="/css/highlight.css" media="all">
+        <meta name="viewport" content="width=775">
         <!--[if lte IE 8]><script>(function(){var e="abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i]);}}());</script><![endif]-->
     </head>
     <body>
-        <header><a href="/">Mind Mining Medium</a></header>
+        <div class="wrapper">
+            <div class="header">
+                <h1><a href="/">Mind Mining Medium</a></h1>
+            </div>
 
-        {{ content }}
-
-        <footer></footer>
+            <div class="main">
+                {{ content }}
+            </div>
+        </div>
     </body>
 </html>
