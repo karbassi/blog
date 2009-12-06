@@ -21,5 +21,5 @@ input{border:1px solid #999}
 .datetime a{color:#666}
 .post{padding-bottom:30px}
 .disqus{font-family:Georgia, 'Times New Roman', Times !important;size:16px;line-height:150% !important;color:#333 !important}
-.allposts{border-top:1px solid #CCC;clear:both;float:left;margin-top:30px}
+.allposts, .disqus{border-top:1px solid #CCC;clear:both;float:left;margin-top:30px}
 .allposts li{list-style-type:none;margin-left:-40px;margin-top:7px}
