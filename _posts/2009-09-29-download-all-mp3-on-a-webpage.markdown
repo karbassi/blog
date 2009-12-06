@@ -6,9 +6,7 @@ title: Download all mp3 on a webpage
 Ever wanted to download all the audio files off a particular webpage? You could manually click and save each one or load up terminal and use this one-liner. **Remember** to only use this for sites that are allowing you do download their content free of charge; stealing is wrong!
 
 {% highlight bash %}
-curl -s SITEURL | \
-grep -oie "\(http\|https\|ftp\|www\).*\.\(mp3\|aac\|wav\|m4a\|ogg\|flac\|aiff\|mp4\|wma\|ram\|ra\)" | \
-sort | uniq | awk '{print "curl -sOL "$1" &"}' | /bin/sh
+curl -s SITEURL | grep -oie "\(http\|https\|ftp\|www\).*\.\(mp3\|aac\|wav\|m4a\|ogg\|flac\|aiff\|mp4\|wma\|ram\|ra\)" | sort | uniq | awk '{print "curl -sOL "$1" &"}' | /bin/sh
 {% endhighlight %}
 
 A quick explanation of what is happening.
