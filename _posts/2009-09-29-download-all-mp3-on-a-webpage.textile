@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Download all mp3 on a webpage"
+---
+
+Ever wanted to download all the audio files off a particular webpage? You could manually click and save each one or load up terminal and use this one-liner. *Remember* to only use this for sites that are allowing you do download their content free of charge; stealing is wrong!
+
+{% highlight bash %}
+curl -s SITEURL | grep -oie "\(http\|https\|ftp\|www\).*\.\(mp3\|wav\|m4a\|ogg\|mp4\)" | sort | uniq | awk '{print "curl -sOL "$1" &"}' | /bin/sh
+{% endhighlight %}
+
+A quick explanation of what is happening.
+
+{% highlight bash %}
+curl -s SITEURL
+{% endhighlight %}
+
+This is downloading the SITEURL (which you should replace with the url of the site/file you want to scrape) but not outputting it nor showing the download progress. This is because of the @-s@ flag that is thrown.
+
+{% highlight bash %}
+grep -oie "\(http\|https\|ftp\|www\).*\.\(mp3\|wav\|m4a\|ogg\|mp4\)"
+{% endhighlight %}
+
+This is parsing/scraping the site/file that we just downloaded for urls that match our regular expression. What we are looking for is urls that start with @http@, @https@, @ftp@, or @www@ and that end with @mp3@,  @wav@, @m4a@, @ogg@, or @mp4@. You can add your own file extensions; just follow the pattern.
+
+{% highlight bash %}
+sort | uniq
+{% endhighlight %}
+
+Sorts, and only displays the unique urls. No need for duplicates!
+
+{% highlight bash %}
+awk '{print "curl -sOL "$1" &"}'
+{% endhighlight %}
+
+Displays the urls as an output of @curl -sOL MP3URL &@, which will actually download the file in the background. The @-O@ flag will create a file and the @-L@ flag will follow any url redirection.
+
+{% highlight bash %}
+/bin/sh
+{% endhighlight %}
+
+Finally, the whole process is ran through the bash (shell) command.
+
+You shouldn't see any output because everything is ran in the background. Just wait for the files to be created in the directory you are in.

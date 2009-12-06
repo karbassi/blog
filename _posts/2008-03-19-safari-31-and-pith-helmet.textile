@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Safari 3.1 and Pith Helmet"
+---
+Recently Apple updated their browser Safari to version 3.1. It does boast new features that us web developers love, but it also crashes some hacks we also love. Note that I'm not calling them "plug-ins". Read the "reasoning behind this":http://daringfireball.net/2007/10/un_in_unsupported.
+
+Now, one of my favorite Safari hacks has been Pith Helmet and with the new update, it is considered "broken." 
+
+h3. Here's how to fix it:
+
+# Quit Safari.
+# Navigate to @/Library/Application Support/SIMBL/Plugins/PithHelmet.bundle.@
+# Control click to show package contents.
+# Open bundle and go to Contents.
+# Double click or open @info.plist@ in your favorite text editor.
+# Change @MaxBundleVersion@ to @5525.13@. This is to match the current Safari version/build.
+
+<pre>
+<code>
+ <key>MaxBundleVersion</key>
+ <string>5525.13</string>
+</code>
+</pre>
+
+# Save and relaunch Safari.
