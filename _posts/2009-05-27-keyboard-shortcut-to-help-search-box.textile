@@ -7,4 +7,4 @@ If you haven't figured out how Mac OS X 10.5 (Leopard) help search box allows yo
 
 The problem for me is that I'm a keyboard person. Over 90% of my day, I barely touch the mouse. Now, to get to the help search bar with your keyboard, just press:
 
-@&#8984; (Command) + &#8679; (Shift) +  ? (Question Mark)@
+@⌘ (Command) + ⇧ (Shift) +  ? (Question Mark)@
