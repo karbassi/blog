@@ -14,7 +14,7 @@ Now, if you take the whole thing by itself, it's not a 16-bit code, but 32-bit. 
 
 If you type the actual string out into google, you will notice that the producers have actually registered the domain "001100010010011110100001101101110011.com":http://001100010010011110100001101101110011.com and displayed just one image. How nice of them. Unlike the site "ilovebender.com":http://ilovebender.com, there is no other information on the page.
 
-They have set up a nice auto-responder to anything that goes to @bender@ilovebender.com@. It reads:
+They have set up a nice auto-responder to anything that goes to @<notextile>bender@ilovebender.com</notextile>@. It reads:
 
 <blockquote>
 Dear New Friend,

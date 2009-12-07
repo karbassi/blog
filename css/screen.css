@@ -1,25 +1,26 @@
-body,html{font-size:20px;line-height:1.5;margin:0 5px;font-family:Corbel, 'Lucida Grande', Helvetica, sans-serif;color:#212122;background-color:#fff}
-tt,pre,code,samp,kbd{font-family:Consolas, 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', monospace;color:#000}
-pre{color:#333;background-color:#f9f9f9;white-space:pre-wrap}
-code{color:#007A00}
-a{color:#333;text-decoration:none;padding:1px 2px;background:#f9fc7e}
-a:hover{color:#666;background:none}
-h1,h2,h3,h4,h5,h6{font-family:georgia, 'bitstream vera sans serif', 'lucida grande', helvetica, verdana, sans-serif;letter-spacing:-.025em}
-h3{color:#666;font-weight:normal !important;margin-bottom:0}
-h4,h2,h1{color:#666;font-weight:400;margin-bottom:0}
-img{background:#fff !important;border:1px solid #999;padding:5px;margin:0}
-img a{text-decoration:none !important;background:#fff !important;margin:0}
-input{border:1px solid #999}
-.disqus a{text-decoration:none !important;background:#fff !important}
-.header{margin-bottom:20px}
-.wrapper{width:620px;margin:1em auto}
-.main{margin:50px 0}
-.datetime{font-size:14px;line-height:22px;color:#999;position:relative;float:left;margin-left:-200px;padding:2px 25px 0 0;border-right:1px solid #999;width:150px;text-align:right;clear:both}
-.navleft{font-size:12px;position:relative;float:left}
-.navright{font-size:12px;position:relative;float:right}
-.navcenter{font-size:12px;text-align:center;width:500px}
-.datetime a{color:#666}
-.post{padding-bottom:30px}
-.disqus{font-family:Georgia, 'Times New Roman', Times !important;size:16px;line-height:150% !important;color:#333 !important}
-.allposts, .disqus{border-top:1px solid #CCC;clear:both;float:left;margin-top:30px}
-.allposts li{list-style-type:none;margin-left:-40px;margin-top:7px}
+body,html{font-size:20px;line-height:1.5;margin:0 5px;font-family:Corbel, 'Lucida Grande', Helvetica, sans-serif;color:#212122;background-color:#FFF;}
+tt,pre,code,samp,kbd{font-family:Consolas, 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', monospace;color:#000;}
+pre{color:#333;background-color:#F9F9F9;white-space:pre-wrap;}
+code{color:#007A00;}
+a{color:#333;text-decoration:none;padding:1px 2px;background:#F9FC7E;}
+a:hover{color:#666;background:none;}
+h1,h2,h3,h4,h5,h6{font-family:Georgia, 'Bitstream Vera Sans Serif', 'Lucida Grande', Helvetica, Verdana, sans-serif;letter-spacing:-.025em;}
+h3{color:#666;font-weight:normal !important;margin-bottom:0;}
+h4,h2,h1{color:#666;font-weight:400;margin-bottom:0;}
+img{background:#FFF !important;border:1px solid #999;padding:5px;margin:0;}
+img a{text-decoration:none !important;background:#FFF !important;margin:0;}
+input{border:1px solid #999;}
+blockquote{border-left: 5px solid #FC8141; margin-left: 0; padding-left:2em;}
+.disqus a{text-decoration:none !important;background:#FFF !important;}
+.header{margin-bottom:20px;}
+.wrapper{width:620px;margin:1em auto;}
+.main{margin:50px 0;}
+.datetime{font-size:14px;line-height:22px;color:#999;position:relative;float:left;margin-left:-200px;padding:2px 25px 0 0;border-right:1px solid #999;width:150px;text-align:right;clear:both;}
+.navleft{font-size:12px;position:relative;float:left;}
+.navright{font-size:12px;position:relative;float:right;}
+.navcenter{font-size:12px;text-align:center;width:500px;}
+.datetime a{color:#666;}
+.post{padding-bottom:30px;}
+.disqus{font-family:Georgia, 'Times New Roman', Times !important;size:16px;line-height:150% !important;color:#333 !important;}
+.allposts, .disqus{border-top:1px solid #CCC;clear:both;float:left;margin-top:30px;width:620px;}
+.allposts li{list-style-type:none;margin-left:-40px;margin-top:7px;}
