@@ -16,7 +16,6 @@ Since "Apple updated Safari from 3.1 to 3.1.1":http://www.apple.com/support/down
 # Double click or open @Info.plist@ in your favorite text editor.
 # Change @SaftSupportedSafariBuild@ to @5525.18@. This is to match the current Safari version/build.
 It will then look like this:
-
 <pre>
 <code>
  <key>SaftSupportedSafariBuild</key>
@@ -25,5 +24,4 @@ It will then look like this:
  </array>
 </code>
 </pre>
-
 # Save and relaunch Safari.

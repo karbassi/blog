@@ -3,11 +3,11 @@ layout: post
 title: "Futurama: Bender's Big Score - Binary Joke"
 ---
 
-!/images/posts/2008-01-15/screen1.jpg(Bender's Big Score - Binary)!
+!/images/posts/2008-01-15/screen1.png(Bender's Big Score - Binary)!
 
 In "Futurama: Bender's Big Score":http://www.imdb.com/title/tt0471711/, Bender reads off a series of 0's and 1's to travel through time. Now I won't go much into the movie, but the writers are known for their geek humor. You should really go buy the movie. It's pretty cheap at "Amazon":http://www.amazon.com/Futurama-Benders-Score-John-DiMaggio/dp/B000UZDO62.
 
-!/images/posts/2008-01-15/screen2.jpg(Bender's Big Score - Binary)!
+!/images/posts/2008-01-15/screen2.png(Bender's Big Score - Binary)!
 
 Now, if you take the whole thing by itself, it's not a 16-bit code, but 32-bit. I believe IBM made a few super computers that handle 32-bit binary. With that said, we can't just pump it into a binary-to-ASCII converter. Watching the movies I noticed that the binary code he reads is symmetrical. If you take the first half of each line you will notice that the binary is translated to 1, 2, 3, 4, 5, and 6. Wow, that simple.
 

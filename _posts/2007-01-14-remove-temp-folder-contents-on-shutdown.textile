@@ -6,19 +6,14 @@ title: "Remove temp folder contents on shutdown"
 A few days ago Codejacked wrote an article talking about "Delete your TEMP files on shutdown":http://www.codejacked.com/delete-your-temp-files-on-shutdown/ for Windows. As much as I loved the article, I have recently switched over to "Ubuntu":http://www.ubuntu.com. Like all operating systems, GNU Linux has temporary files also. Here's how to delete them on shutdown.
 
 # Back up what you're going to working on.
-
     {% highlight bash %}
     sudo cp /etc/init.d/sysklogd /etc/init.d/sysklogd_backup
     {% endhighlight %}
-
 # Open the file in @gedit@
-
     {% highlight bash %}
     gksudo gedit /etc/init.d/sysklogd
     {% endhighlight %}
-
 # Find the following section
-
     {% highlight bash %}
     ...
     stop)
@@ -27,12 +22,8 @@ A few days ago Codejacked wrote an article talking about "Delete your TEMP files
     log_end_msg $?
     ...
     {% endhighlight %}
-
 # Add the following line after @log_end_msg $?@ or before @;;@.
-
     {% highlight bash %}
     rm -fr /tmp/* /tmp/.??*
     {% endhighlight %}
-
 # Save the file and you're set!
-
