@@ -2,6 +2,7 @@
 layout: post
 title: "See how many Kernel Panics your Mac has had"
 ---
+
 In bash:
 
 {% highlight bash %}

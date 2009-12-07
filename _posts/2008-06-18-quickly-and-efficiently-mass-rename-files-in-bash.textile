@@ -2,6 +2,7 @@
 layout: post
 title: "Quickly, and efficiently, mass rename files in bash"
 ---
+
 Quick tip for everyone who is using Mac OS X, Unix, or anything with bash. If you want to mass rename a bunch of files, there isn't a simple way of doing it. Either you would have to do it manually (@mv ryan.txt steve.txt@) or you could use this simple line of code.
 
 {% highlight bash %}

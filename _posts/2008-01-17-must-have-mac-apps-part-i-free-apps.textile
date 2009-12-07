@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Must Have Mac Apps: Part I - Free Apps"
+title: "Must Have Free Mac Apps"
 ---
 
-A few friends of mine have recently switched over to <acronym title="Macintosh">Mac</acronym>. I have been using my Macbook for some time now and have grown accustom to some applications. This will be a two part article. The following will be *free* applications. <del>Part II will be paid applications. I suggest you giving them a try before buying.</del>
+A few friends of mine have recently switched over to Mac(Macintosh). I have been using my Macbook for some time now and have grown accustom to some applications. This will be a two part article. The following will be *free* applications.
 
 This is the first tool I load on any Mac I use. What "Quicksilver":http://www.blacktree.com/?quicksilver does is allow you to launch any application without actually looking inside the Finder/Application folder. Still confused? Check out "many":http://www.tuaw.com/tag/Quicksilver/ "other":http://lifehacker.com/software/quicksilver/hack-attack-a-beginners-guide-to-quicksilver-247129.php "resources":http://www.youtube.com/watch?v=EBvFUhTqKK4 that "explain":http://guides.macrumors.com/Quicksilver all the ways to use Quicksilver.
 

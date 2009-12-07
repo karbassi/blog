@@ -2,6 +2,7 @@
 layout: post
 title: "How To: Find the size of a directory"
 ---
+
 Sometimes it's very useful to know how much content is in a directory without opening a GUI interface.
 
 In Bash:

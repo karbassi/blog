@@ -2,6 +2,7 @@
 layout: post
 title: "Automatically Block Facebook Applications"
 ---
+
 !/images/posts/2007-09-19/blocked.png(Facebook Blocked Applications Header)!
 
 While working on the next version of my "Facebook Profile Cleaner":http://tech.karbassi.com/2007/08/27/facebook-profile-cleaner/ "Facebook Profile Cleaner", I noticed something that I was doing. Every time I would log into Facebook, I would have 3-5 new application invites. Personally, I don't care too much about them (if you didn't know already). I set out to see if I could come up with a way to automatically block them upon sign on/request.

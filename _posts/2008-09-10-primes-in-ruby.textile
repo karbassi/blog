@@ -2,6 +2,7 @@
 layout: post
 title: "Primes in Ruby"
 ---
+
 !/images/posts/2008-09-10/discrete.jpg(26/366 Discrete Mathematical Structures)!:http://www.flickr.com/photos/10324788@N03/2227014216/
 
 While working on some homework for a mathematics course, I ran into a problem; I needed a list of primes. I could manually produce a list of 10, maybe 20 primes but what's the fun in that. Having my trusty MacBook near me, I loaded up TextMate and started to write a simple Ruby program to produce primes.

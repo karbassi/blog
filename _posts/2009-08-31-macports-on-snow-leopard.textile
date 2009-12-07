@@ -2,6 +2,7 @@
 layout: post
 title: "MacPorts on Snow Leopard"
 ---
+
 *Update:* The nice people at MacPorts have update the package to v1.8.0. You can follow "their instructions":http://trac.macports.org/post/macports-180-now-available/ to upgrade to the latest stable version. I would suggest the "MacPorts v1.8.0 for OS X 10.6 DMG":http://distfiles.macports.org/MacPorts/MacPorts-1.8.0-10.6-SnowLeopard.dmg file.
 
 After installing Snow Leopard, you may want to install the MacPorts. Follow the following steps to get it up and running:

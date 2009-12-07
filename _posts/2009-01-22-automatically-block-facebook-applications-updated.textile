@@ -2,6 +2,7 @@
 layout: post
 title: "Automatically Block Facebook Applications Updated!"
 ---
+
 Two years later, I decided to take a look at my old, old, OLD Greasemonkey script to see if it was still working. This is after two minor updates on Facebook and one *major* update that changed the whole design and structure.
 
 Surprisingly, the script works exactly like it should. I made one minor update, but after many tests, it works for me.

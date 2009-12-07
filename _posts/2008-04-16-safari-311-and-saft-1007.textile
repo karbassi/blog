@@ -2,6 +2,7 @@
 layout: post
 title: "Safari 3.1.1 and Saft 10.0.7"
 ---
+
 !/images/posts/2008-04-16/saft.jpg(Saft needs to be updated to handle Safari 3.1.1)!
 
 I have always used "Webkit":http://webkit.org/ ever since switching to "Safari":http://www.apple.com/safari/ as my general browser. Being that I'm always getting the newest build, I know what's coming when Safari decides to upgrade.

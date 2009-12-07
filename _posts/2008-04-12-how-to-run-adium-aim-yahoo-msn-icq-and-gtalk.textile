@@ -2,6 +2,7 @@
 layout: post
 title: "How to run Adium (AIM, Yahoo, MSN, ICQ, and  GTalk)"
 ---
+
 Being that not all locations allow all ports to be accessed through their gateway to the internet, sometimes you will run into problems in connecting to your IM(Instant Messaging) programs such as "iChat":http://www.apple.com/macosx/features/ichat.html or, even better, "Adium":http://www.adiumx.com/. The following steps should work for "Pidgin":http://www.pidgin.im/.
 
 Now, we know that all internet access points (WiFi spots, hotels, etc) will allow Port 80. This is because it is the port most web servers output websites. You can see what other ports are used for on Wikipedia's ""List of TCP and UDP port":http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers numbers page.
@@ -18,7 +19,7 @@ For Yahoo, set the *port to 80* and login server to *scs.msg.yahoo.com*.
 
 !/images/posts/2008-04-12/AdiumMSN.jpg(Adium MSN)!
 
-For <acronym title="The Microsoft Network">MSN</acronym>, set the *port to 80* and the login server to *messenger.hotmail.com*. Also check the "*Connect via HTTP*" box. This allows access through port 80.
+For MSN(The Microsoft Network), set the *port to 80* and the login server to *messenger.hotmail.com*. Also check the "*Connect via HTTP*" box. This allows access through port 80.
 
 !/images/posts/2008-04-12/AdiumGTalk.jpg(Adium GTalk)!
 

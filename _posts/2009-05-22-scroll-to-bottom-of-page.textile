@@ -2,6 +2,7 @@
 layout: post
 title: "Scroll to bottom of page."
 ---
+
 In javascript:
 
 {% highlight javascript %}

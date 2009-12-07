@@ -2,6 +2,7 @@
 layout: post
 title: "CSS Font List"
 ---
+
 While designing a simple website for a friend, I noticed that I knew nothing about the different font families I could use. While I have tons of fonts on my computer, I can't use those on the web.
 
 I did a quick Google search and found a small list and here it is for you.

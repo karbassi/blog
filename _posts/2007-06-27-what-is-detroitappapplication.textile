@@ -2,6 +2,7 @@
 layout: post
 title: "What is detroit.app.Application?"
 ---
+
 Recently "Google Docs & Spreadsheets":http://docs.google.com released a "new version":http://google-d-s.blogspot.com/2007/06/entirely-new-way-to-stay-organized.html of their wonderful application. It's a wonderful new interface and foreshadows what Google Docs is going to turn into.
 
 Like always, I went snooping around to see what I could find. It's usually fun to see what they didn't implement yet. Taking a look at the "javascript source":http://docs.google.com/doclist/client/js/434292853-doclist_local.js (notice the link might change) I found something very interesting.

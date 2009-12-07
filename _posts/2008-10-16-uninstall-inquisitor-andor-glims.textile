@@ -2,6 +2,7 @@
 layout: post
 title: "Uninstall Inquisitor and/or Glims"
 ---
+
 !/images/posts/2008-10-16/schoschie.jpg(Schoschie vs. Apple)!:http://www.flickr.com/photos/87569910@N00/2530972208/
 
 Recently I've giving "Glims":http://www.machangout.com/ a try. Even though it *tries* to combine what Inquisitor and Saft both do into one single free application, I was very disappointed in the ease of use and look.

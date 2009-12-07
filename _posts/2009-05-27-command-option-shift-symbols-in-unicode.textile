@@ -2,6 +2,7 @@
 layout: post
 title: "Command, Option, & Shift Symbols in Unicode"
 ---
+
 Unicode does define some other characters which are sort of Mac-specific.
 
 &#x2318; - @&#x2318&#59; - &#8984&#59;@ - the Command Key symbol

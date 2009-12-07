@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solution to The Spanner's "A bit of fun" challenge"
+title: Solution to The Spanner's "A bit of fun" challenge
 ---
 
 A while back, "The Spanner":http://www.thespanner.co.uk/'s very own Gareth Heyes posted a (decent challenge)"http://www.thespanner.co.uk/2007/10/10/a-bit-of-fun/]. As I stated in [a previous posting":http://tech.karbassi.com/2007/10/10/javascript-octal-to-ascii/ I took on the challenge. It didn't take as long as I thought it would, but it was still challenging. I've waited a while before posting the actual code I used; that way people can figure it out themselves without any spoilers. That being said, it's about time I posted how I did it. Remember, my code might, and probably is, different than what you may have used.

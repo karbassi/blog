@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Programming Child Names or 'What not to name your children'"
+title: Programming Child Names or "What not to name your children"
 ---
 
 Am I being too much of a geek to even consider this? I always thought it would be super cute (and nerdy) to name your child after something you love. Okay, maybe not for all loves, but it works for some loves. People name their children after their parents, grandparents, celebrities, and even pets; so why not name a child after programming languages. Maybe it's too much of a commitment to name your child after a programming language, but maybe a pet.
