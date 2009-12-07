@@ -5,10 +5,10 @@ title: "Command, Option, & Shift Symbols in Unicode"
 
 Unicode does define some other characters which are sort of Mac-specific.
 
-⌘ - @&#x2318; - &#8984;@ - the Command Key symbol
-⌥ - @&#x2325; - &#8997;@ - the Option Key symbol
-⇧ - @&#x21E7; - &#8679;@ - the Shift Key symbol
-⎋ - @&#x238B; - &#9099;@ - the Power Button
+<notextile>&#x2318;</notextile> - @&#x2318; - &#8984;@ - the Command Key symbol
+<notextile>&#x2325;</notextile> - @&#x2325; - &#8997;@ - the Option Key symbol
+<notextile>&#x21E7;</notextile> - @&#x21E7; - &#8679;@ - the Shift Key symbol
+<notextile>&#x238B;</notextile> - @&#x238B; - &#9099;@ - the Power Button
 
 *Note:* The Power Button and Shift Key are not Mac-specific. The power button is described as "broken circle with northwest arrow", or an escape character from ISO 9995-7. The shift key is described as an "outline up-arrow".
 
