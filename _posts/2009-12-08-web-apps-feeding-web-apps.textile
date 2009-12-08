@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Web Apps Feeding Web Apps"
+published: false
+---
+
+I just realized that I've been feeding web apps with other web apps, and all for free.
+
+I listen to "Last.fm":http://last.fm via "sweet.fm":http://github.com/MagicMoo/SweetFM which will download my _loved_ tracks to my iTunes, that will be uploaded to "lala.com":http://lala.com with their "lala music mover":http://www.lala.com/musicmover/uploader app.
+
+So, after a week of use, I've had over two thousand songs up on lala to be listened to anywhere at anytime.
