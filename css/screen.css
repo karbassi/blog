@@ -8,9 +8,14 @@ html {
     margin            : 0 5px;
 }
 
-tt,pre,code,samp,kbd {
+tt,
+pre,
+code,
+samp,
+kbd {
     color             : #000;
     font-family       : Consolas, 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+    font-size         : 0.9em;
 }
 
 pre {
@@ -114,8 +119,8 @@ blockquote {
     clear             : both;
     color             : #999;
     float             : left;
-    font-size         : 11px;
-    line-height       : 22px;
+    font-size         : 0.75em;
+    line-height       : 1.5em;
     margin-left       : -200px;
     padding           : 2px 25px 0 0;
     position          : relative;
