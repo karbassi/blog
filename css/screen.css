@@ -115,15 +115,12 @@ blockquote {
 }
 
 .datetime {
-    border-right      : 1px solid #999;
-    clear             : both;
-    color             : #999;
+    color             : #888;
     float             : left;
-    font-size         : 0.75em;
-    line-height       : 1.5em;
-    margin-left       : -200px;
-    padding           : 2px 25px 0 0;
-    position          : relative;
+    font-size         : 1em;
+    line-height       : 1em;
+    margin-left       : -175px;
+    padding           : 10px 3px;
     text-align        : right;
     width             : 150px;
 }
