@@ -45,6 +45,15 @@ h6 {
     letter-spacing    : -.025em;
 }
 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    background        : none;
+}
+
 h3 {
     color             : #666;
     font-weight       : normal !important;
@@ -159,4 +168,12 @@ blockquote {
     list-style-type   : none;
     margin-left       : -40px;
     margin-top        : 7px;
+}
+
+.allposts li a {
+    background        : none;
+}
+
+.allposts li span {
+    float             : right;
 }
