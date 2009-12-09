@@ -119,10 +119,10 @@ blockquote {
     float             : left;
     font-size         : 1em;
     line-height       : 1em;
-    margin-left       : -175px;
+    margin-left       : -200px;
     padding           : 10px 3px;
     text-align        : right;
-    width             : 150px;
+    width             : 175px;
 }
 
 .navleft {
