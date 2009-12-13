@@ -151,6 +151,7 @@ blockquote {
 }
 
 .post img {
+    cursor            : pointer;
     max-width         : 600px;
 }
 
