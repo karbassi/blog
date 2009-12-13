@@ -26,16 +26,29 @@
 
         <!-- I bow down to my overlord, Google. -->
         <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-51850-6']);
-          _gaq.push(['_trackPageview']);
-          (function() {
-            var ga = document.createElement('script');
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            ga.setAttribute('async', 'true');
-            document.documentElement.firstChild.appendChild(ga);
-          })();
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-51850-6']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                ga.setAttribute('async', 'true');
+                document.documentElement.firstChild.appendChild(ga);
+            })();
+        </script>
 
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+
+                // Add links to images that are bigger than the layout.
+                $(".post img").each(function(k, v){
+                    var theImage = new Image();
+                    theImage.src = $(v).attr("src");
+                    if(theImage.width > $(v).width() ) {
+                        $(v).wrap('<a href="' + $(v).attr('src') + '"/>');
+                    }
+                });
+            });
         </script>
     </head>
     <body>
