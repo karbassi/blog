@@ -11,11 +11,11 @@ To test this out, I found a song that I didn't already have. ""Fireflies":http:/
 
 What does this teach us? The lala mover does nothing but check for ID3 tags. But really, I just saved 10<notextile>&cent;</notextile>. It's not possible to download the track from lala being that they think I already own the track.
 
-!/images/posts/2009-12-12/1-lala-fireflies.png!
-!/images/posts/2009-12-12/2-lala-fireflies-none.png!
-!/images/posts/2009-12-12/3-itunes-sample-mp3.png!
-!/images/posts/2009-12-12/4-ID3-sample.png!
-!/images/posts/2009-12-12/5-ID3-firefly.png!
-!/images/posts/2009-12-12/6-itunes-firefly.png!
-!/images/posts/2009-12-12/7-lal-mover.png!
-!/images/posts/2009-12-12/8-lala-fireflies-have.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/1-lala-fireflies.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/2-lala-fireflies-none.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/3-itunes-sample-mp3.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/4-ID3-sample.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/5-ID3-firefly.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/6-itunes-firefly.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/7-lal-mover.png!
+!http://tech.karbassi.com/images/posts/2009-12-12/8-lala-fireflies-have.png!

@@ -3,7 +3,7 @@ layout: post
 title: "Replace Picasa with Flickr"
 ---
 
-!/images/posts/2007-10-23/gbar.png(Google Photo to Flickr)!
+!http://tech.karbassi.com/images/posts/2007-10-23/gbar.png(Google Photo to Flickr)!
 
 Okay, maybe the title is a little misleading, but that's what I wanted to do. I love "Google":http://www.google.com for mostly everything, but one thing "Yahoo":http://www.yahoo.com did right was to snatch up "Flickr":http://www.flickr.com. Flickr has so much more to offer that "Picasa":http://picasaweb.google.com/ doesn't. One side note though; Flickr doesn't have a desktop photo organizer, but that's no real loss for me.
 

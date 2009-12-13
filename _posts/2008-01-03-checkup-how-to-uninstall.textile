@@ -10,7 +10,7 @@ The latest of these problems has been "CheckUp":http://www.app4mac.com/checkup.h
 
 That being said, I will not talk about the application itself. I am will show you how to fully remove the application from Mac.
 
-!/images/posts/2008-01-03/terminal.png(Terminal | Remove Checkup)!
+!http://tech.karbassi.com/images/posts/2008-01-03/terminal.png(Terminal | Remove Checkup)!
 
 First load up Terminal (in Finder go to @Utlities > Terminal.app@). In terminal type:
 

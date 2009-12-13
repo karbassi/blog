@@ -5,7 +5,7 @@ title: "Setting terminal tab titles"
 
 I've always hated the fact that I would have 5-10 tabs open in Terminal, and they would all say @bash@.
 
-!/images/posts/2009-08-28/screen1.png(Mac Terminal Example)!
+!http://tech.karbassi.com/images/posts/2009-08-28/screen1.png(Mac Terminal Example)!
 
 After doing some quick research, I stumbled on "decent solution":http://pseudogreen.org/blog/set_tab_names_in_leopard_terminal.html on setting window and tab names in the Leopard Terminal.
 
@@ -41,6 +41,6 @@ function set_window_and_tab_title
 PROMPT_COMMAND='set_window_and_tab_title "${PWD##*/}"'
 {% endhighlight %}
 
-!/images/posts/2009-08-28/screen2.png(Shell settings)!
+!http://tech.karbassi.com/images/posts/2009-08-28/screen2.png(Shell settings)!
 
 Restart bash and everything should be working, hunky-dory. One problem you'll notice is that when you try to close a session, terminal will prompt you about running processes. This is a side-affect of forking the process. A quick fix is to set the @"Prompt before closing"@ in @Preferences > Settings > Shell@ to "Never".
