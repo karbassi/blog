@@ -24,6 +24,9 @@
         <!-- Much love for jQuery! -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+        <!-- Colourbox, ok, fine.. Colorbox -->
+        <script type="text/javascript" src="http://tech.karbassi.com/js/jquery.colorbox.js"></script>
+
         <!-- I bow down to my overlord, Google. -->
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -40,13 +43,9 @@
         <script type="text/javascript">
             jQuery(document).ready(function($) {
 
-                // Add links to images that are bigger than the layout.
+                // Colorbox images ;)
                 $(".post img").each(function(k, v){
-                    var theImage = new Image();
-                    theImage.src = $(v).attr("src");
-                    if(theImage.width > $(v).width() ) {
-                        $(v).wrap('<a href="' + $(v).attr('src') + '"/>');
-                    }
+                    $(v).colorbox({transition:"elastic", href: $(v).attr('src') });
                 });
             });
         </script>
