@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Flatten</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://github.com/jquery/qunit/raw/master/qunit/qunit.css" type="text/css" media="screen">
+        <script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+
+        <script type="text/javascript">
+        function flatten(array){
+            var flat = [];
+            for (var i = 0, l = array.length; i < l; i++){
+                var type = Object.prototype.toString.call(array[i]).split(' ').pop().split(']').shift().toLowerCase();
+                if (type) { flat = flat.concat(/^(array|collection|arguments|object)$/.test(type) ? flatten(array[i]) : array[i]); }
+            }
+            return flat;
+        }
+
+        Array.prototype.flatten = function(){
+            var flat = [];
+            for (var i = 0, l = this.length; i < l; i++){
+                var type = Object.prototype.toString.call(this[i]).split(' ').pop().split(']').shift().toLowerCase();
+                if (type) { flat = flat.concat(/^(array|collection|arguments|object)$/.test(type) ? flatten(this[i]) : this[i]); }
+            }
+            return flat;
+        };
+        </script>
+        <script>
+        $(document).ready(function(){
+
+            module("Integers");
+
+            test('Simple array', function() {
+                var given = [1, 2, 3];
+                var expected = [1, 2, 3];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+            test('Array with array in the 2nd element', function() {
+                var given = [1, [2], 3];
+                var expected = [1, 2, 3];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+            test('Multi-nested array', function() {
+                var given = [[[[[[[[[[[[[[[[[[[[[[1]]]]]]]]]]]]]]]]]]]]]];
+                var expected = [1];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+
+
+                given = [[1, [2, [3, [4, [5, [6, [7, [8, [9, [0]]]]]]]]]]];
+                expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+                value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+
+            });
+
+            module("Strings");
+
+            test('Simple array', function() {
+                var given = ['hey', 'there'];
+                var expected = ['hey', 'there'];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+            test('Array with array in the 2nd element', function() {
+                var given = ['hey', ['there'], 'my', 'friend'];
+                var expected = ['hey', 'there', 'my', 'friend'];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+            module("Objects");
+
+            test('Simple array', function() {
+                var x = function(){ return true; };
+                var y = function(){ return false; };
+                var given = [x, y];
+                var expected = [x, y];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+            test('Array with array in the 2nd element', function() {
+                var x = function(){ return true; };
+                var y = function(){ return false; };
+                var given = [x, [y], y, y];
+                var expected = [x, y, y, y];
+                var value = flatten(given);
+                same(expected, value);
+
+                value = given.flatten();
+                same(expected, value);
+            });
+
+          });
+        </script>
+    </head>
+    <body>
+        <h1 id="qunit-header">Pure Javascript Flatten</h1>
+        <h2 id="qunit-banner"></h2>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+    </body>
+</html>
