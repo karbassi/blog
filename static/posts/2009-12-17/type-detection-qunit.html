@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Type Detection</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <link rel="stylesheet" href="http://github.com/jquery/qunit/raw/master/qunit/qunit.css" type="text/css" media="screen">
+        <script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+
+        <script type="text/javascript">
+        function getType(obj){
+            if (obj === undefined) { return 'undefined'; }
+            if (obj === null) { return 'null'; }
+            return Object.prototype.toString.call(obj).split(' ').pop().split(']').shift().toLowerCase();
+        }
+
+        Object.prototype.getType = function(){
+            return Object.prototype.toString.call(this).split(' ').pop().split(']').shift().toLowerCase();
+        };
+        </script>
+        <script>
+        $(document).ready(function(){
+
+            test('Integer', function() {
+                ok( getType(1) == 'number', 'getType(1)');
+                ok( (1).getType() == 'number', '(1).getType()');
+            });
+
+            test('Integer in string', function() {
+                ok( getType('1') == 'string', 'getType("1")');
+                ok( ('1').getType() == 'string', '("1").getType()');
+            });
+
+            test('String', function() {
+                ok( getType('Hello') == 'string', 'getType("Hello")');
+                ok( ('Hello').getType() == 'string', '("Hello").getType()');
+            });
+
+            test('Array', function() {
+                ok( getType([1]) == 'array', 'getType([1])');
+                ok( ([1]).getType() == 'array', '([1]).getType()');
+            });
+
+            test('Object', function() {
+                ok( getType({}) == 'object', 'getType({})');
+                ok( ({}).getType() == 'object', '({}).getType()');
+            });
+
+            test('Function', function() {
+                ok( getType(function(){}) == 'function', 'getType(function(){})');
+                ok( (function(){}).getType() == 'function', '(function(){}).getType()');
+            });
+
+            test('Boolean', function() {
+                ok( getType(true) == 'boolean', 'getType(true)');
+                ok( (true).getType() == 'boolean', '(true).getType()');
+                ok( getType(false) == 'boolean', 'getType(false)');
+                ok( (false).getType() == 'boolean', '(false).getType()');
+            });
+
+            test('Null', function() {
+                ok( getType(null) == 'null', 'getType(null)');
+
+                // null has no properties
+                // ok( (null).getType() == 'null', '(null).getType()');
+            });
+
+            test('Undefined', function() {
+                ok( getType(undefined) == 'undefined', 'getType(undefined)');
+
+                // undefined has no properties
+                // ok( (undefined).getType() == 'undefined', '(undefined).getType()');
+            });
+
+            test('Date', function() {
+                ok( getType( new Date() ) == 'date', 'getType( new Date() )');
+                ok( ( new Date() ).getType() == 'date', '( new Date() ).getType()');
+            });
+
+          });
+        </script>
+    </head>
+    <body>
+        <h1 id="qunit-header">Javascript Type Detection</h1>
+        <h2 id="qunit-banner"></h2>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+    </body>
+</html>
