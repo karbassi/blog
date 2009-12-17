@@ -34,39 +34,39 @@
                 var given = [1, 2, 3];
                 var expected = [1, 2, 3];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
             test('Array with array in the 2nd element', function() {
                 var given = [1, [2], 3];
                 var expected = [1, 2, 3];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
             test('Multi-nested array', function() {
                 var given = [[[[[[[[[[[[[[[[[[[[[[1]]]]]]]]]]]]]]]]]]]]]];
                 var expected = [1];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
 
 
                 given = [[1, [2, [3, [4, [5, [6, [7, [8, [9, [0]]]]]]]]]]];
                 expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
                 value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
 
             });
 
@@ -76,20 +76,20 @@
                 var given = ['hey', 'there'];
                 var expected = ['hey', 'there'];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
             test('Array with array in the 2nd element', function() {
                 var given = ['hey', ['there'], 'my', 'friend'];
                 var expected = ['hey', 'there', 'my', 'friend'];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
             module("Objects");
@@ -100,10 +100,10 @@
                 var given = [x, y];
                 var expected = [x, y];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
             test('Array with array in the 2nd element', function() {
@@ -112,10 +112,10 @@
                 var given = [x, [y], y, y];
                 var expected = [x, y, y, y];
                 var value = flatten(given);
-                same(expected, value);
+                deepEqual(expected, value);
 
                 value = given.flatten();
-                same(expected, value);
+                deepEqual(expected, value);
             });
 
           });
