@@ -3,7 +3,7 @@ layout: post
 title: "Pure JavaScript Flatten Array"
 ---
 
-While working on my current project I needed a way to turn a heavily nested array and flatten it. There are some nice JavaScript libraries that have functions to do so, such as "Underscore's":http://documentcloud.github.com/underscore/ "_.flatten":http://documentcloud.github.com/underscore/#flatten and "Prototype's":http://www.prototypejs.org ".flatten":http://www.prototypejs.org/api/array/flatten to name a few. 
+While working on my current project I needed a way to turn a heavily nested array and flatten it. There are some nice JavaScript libraries that have functions to do so, such as Underscore's "_.flatten":http://documentcloud.github.com/underscore/#flatten and Prototype's ".flatten":http://www.prototypejs.org/api/array/flatten to name a few. 
 
 However, with "reduce":https://developer.mozilla.org/En/Core_JavaScript_1.5_Reference/Objects/Array/Reduce#Example.3a_Flatten_an_array_of_arrays being implemented only in JavaScript 1.8 and not wanting to include a whole JavaScript library to do one task, I decided to write my own. You may want to take a look at the "QUnit testing page":http://tech.karbassi.com/static/posts/2009-12-17/flatten-qunit.html.
 
