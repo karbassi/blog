@@ -51,9 +51,13 @@
 
                 $('#source > a').each(function(k, v){
                     // http://tech.karbassi.com/2009/12/18/object-type-in-javascript/
-                    var url = $(this).attr('href').split('http://tech.karbassi.com').pop();
-                    console.debug(url);
-                })
+                    // http://github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
+                    var a = 'http://github.com/karbassi/karbassi.github.com/blob/master/_posts/',
+                        b = '.textile',
+                        url = a + $(this).attr('href').split('http://tech.karbassi.com').pop().split('/').join('-').slice(0,-1) + b
+                    ;
+                    $(this).attr('href', url);
+                });
             });
         </script>
     </head>
