@@ -54,7 +54,7 @@
                     // http://github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
                     var a = 'http://github.com/karbassi/karbassi.github.com/blob/master/_posts/',
                         b = '.textile',
-                        url = a + $(this).attr('href').split('http://tech.karbassi.com').pop().split('/').join('-').slice(0,-1) + b
+                        url = a + $(this).attr('href').split('http://tech.karbassi.com').pop().split('/').join('-').slice(1,-1) + b
                     ;
                     $(this).attr('href', url);
                 });
