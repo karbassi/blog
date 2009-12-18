@@ -5,7 +5,7 @@ title: "Object Type in Javascript"
 
 Someone noted the interesting line that I use to find the object type.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 function getType(obj){
     if (obj === undefined) { return 'undefined'; }
     if (obj === null) { return 'null'; }

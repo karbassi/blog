@@ -3,11 +3,11 @@ layout: post
 title: "How To FULLY Disable Spotlight in Leopard"
 ---
 
-*Warning:* This is changing system settings that may or may not be attached to other tools. After an extensive search on the internet, one of these tools affected by the following steps is "TimeMachine":http://www.apple.com/macosx/features/timemachine.html/"TimeCapsule":http://www.apple.com/timecapsule/. If you are using them, I would *not* follow these steps. Rule of thumb: if you think it will mess up your system and you don't want to worry about that, don't do it.
+*Warning:* This is changing system settings that may or may not be attached to other tools. After an extensive search on the internet, one of these tools affected by the following steps is "TimeMachine":http://www.apple.com/macosx/features/timemachine.html / "TimeCapsule":http://www.apple.com/timecapsule/. If you are using them, I would *not* follow these steps. Rule of thumb: if you think it will mess up your system and you don't want to worry about that, don't do it.
 
 h3. Quick way
 
-To disable:
+h4. Disable:
 
 {% highlight bash %}
 sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
@@ -16,7 +16,7 @@ launchctl unload /System/Library/LaunchAgents/com.apple.Spotlight.plist
 sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
 {% endhighlight %}
 
-To re-enable:
+h4. re-enable:
 
 {% highlight bash %}
 sudo launchctl load /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
@@ -28,6 +28,7 @@ sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
 h3. Explanation
 
 # Stop and disable the background server:
+    
     * Kill the Daemon:
         {% highlight bash %}
         sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
@@ -39,6 +40,7 @@ h3. Explanation
         sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
         {% endhighlight %}
 # Stop and disable the spotlight application itself:
+
     * Kill the Agent:
         {% highlight bash %}
         launchctl unload /System/Library/LaunchAgents/com.apple.Spotlight.plist
