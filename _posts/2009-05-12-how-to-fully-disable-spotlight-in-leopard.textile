@@ -27,30 +27,31 @@ sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
 
 h3. Explanation
 
-# Stop and disable the background server:
-    
-    * Kill the Daemon:
-        {% highlight bash %}
-        sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-        sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-        {% endhighlight %}
-    * Re-enable the Daemon:
-        {% highlight bash %}
-        sudo launchctl load /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-        sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
-        {% endhighlight %}
-# Stop and disable the spotlight application itself:
+h4. Stop and disable the background server:
 
-    * Kill the Agent:
-        {% highlight bash %}
-        launchctl unload /System/Library/LaunchAgents/com.apple.Spotlight.plist
-        sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
-        {% endhighlight %}
-    * Re-enable the Agent:
-        {% highlight bash %}
-        launchctl load /System/Library/LaunchAgents/com.apple.Spotlight.plist
-        sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
-        {% endhighlight %}
+* Kill the Daemon:
+   {% highlight bash %}
+   sudo launchctl unload /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+   sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+   {% endhighlight %}
+* Re-enable the Daemon:
+   {% highlight bash %}
+   sudo launchctl load /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+   sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist
+   {% endhighlight %}
+
+h4. Stop and disable the spotlight application itself:
+
+* Kill the Agent:
+   {% highlight bash %}
+   launchctl unload /System/Library/LaunchAgents/com.apple.Spotlight.plist
+   sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+   {% endhighlight %}
+* Re-enable the Agent:
+   {% highlight bash %}
+   launchctl load /System/Library/LaunchAgents/com.apple.Spotlight.plist
+   sudo launchctl load -w /System/Library/LaunchAgents/com.apple.Spotlight.plist
+   {% endhighlight %}
 
 You may get an error on the last command; just ignore it.
 
