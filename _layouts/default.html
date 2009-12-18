@@ -48,6 +48,12 @@
                 $(".post img").each(function(k, v){
                     $(v).colorbox({transition:"elastic", href: $(v).attr('src') });
                 });
+
+                $('#source > a').each(function(k, v){
+                    // http://tech.karbassi.com/2009/12/18/object-type-in-javascript/
+                    var url = $(this).attr('href').split('http://tech.karbassi.com').pop();
+                    console.debug(url);
+                })
             });
         </script>
     </head>
