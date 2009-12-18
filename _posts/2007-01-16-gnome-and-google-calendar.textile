@@ -7,14 +7,16 @@ Britt Selvitelle writes on how to combine "Google Calendar and Ubuntu":http://lu
 
 Let's get down to business.
 
-First open up a @terminal@ by going to @Applications > Accessories > Terminal@ (in Ubuntu) or press @Alt + F2@ and type in @terminal@. Now that you have a terminal open, let's get down to viewing your history.
+First open up a @terminal@ by going to Applications @>@ Accessories @>@ Terminal (in Ubuntu) or press @Alt + F2@ and type in @terminal@. Now that you have a terminal open, let's get down to viewing your history.
 
 Ubuntu users type:
+
 {% highlight bash %}
 /usr/lib/evolution-webcal/evolution-webcal $GOOGLE_ICAL_URL
 {% endhighlight %}
 
 For any other "GNOME":http://www.gnome.org/ environment:
+
 {% highlight bash %}
 /usr/libexec/evolution-webcal $GOOGLE_ICAL_URL
 {% endhighlight %}

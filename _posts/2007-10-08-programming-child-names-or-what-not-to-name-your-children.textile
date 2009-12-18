@@ -8,12 +8,14 @@ Am I being too much of a geek to even consider this? I always thought it would b
 Here's a short list of programming languages that could be names also. Bare with me.
 
 <dl>
-	<dt>Perl, Ruby</dt>
-		<dd>"Pearl" and "Ruby"; Both could be said to be named after jewels.</dd>
-	<dt>C, C++</dt>
-		<dd>Alright, you shouldn't name your child just one letter, but you can name him or her which starts with the character C. *Examples*: Chris, Chad, Christy, Caroline, etc. Now, if you could make your child name their child with a C</dd>
-	<dt>PHP/ASP/JSP</dt>
-		<dd>You have to have a last name that starts with P. So, let's say you're last name is Perkins. You can name your children, *P*hillip *H*urburt *P*erkins, *A*llison *S*usan *P*erkins, or *J*enny *S*andra *P*erkins.</dd>
+   <dt>Perl, Ruby</dt>
+      <dd>"Pearl" and "Ruby"; Both could be said to be named after jewels.</dd>
+
+   <dt>C, C++</dt>
+      <dd>Alright, you shouldn't name your child just one letter, but you can name him or her which starts with the character C. *Examples*: Chris, Chad, Christy, Caroline, etc. Now, if you could make your child name their child with a C</dd>
+      
+   <dt>PHP/ASP/JSP</dt>
+      <dd>You have to have a last name that starts with P. So, let's say you're last name is Perkins. You can name your children, Phillip Hurburt Perkins, Allison Susan Perkins, or Jenny Sandra Perkins.</dd>
 </dl>
 
 

@@ -15,10 +15,8 @@ h3. Here's how to fix it:
 # Open bundle and go to Contents.
 # Double click or open @info.plist@ in your favorite text editor.
 # Change @MaxBundleVersion@ to @5525.13@. This is to match the current Safari version/build.
-<pre>
-<code>
- <key>MaxBundleVersion</key>
- <string>5525.13</string>
-</code>
-</pre>
+{% highlight xml %}
+<key>MaxBundleVersion</key>
+<string>5525.13</string>
+{% endhighlight %}
 # Save and relaunch Safari.
