@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://karbassi.github.com/</loc>
+		<loc>http://tech.karbassi.com/</loc>
 		<lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
 		<changefreq>weekly</changefreq>
 	</url>
 
 	{% for post in site.posts %}
 		<url>
-			<loc>http://karbassi.github.com{{ post.id }}</loc>
+			<loc>http://tech.karbassi.com{{ post.id }}</loc>
 			<lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
 		</url>
 	{% endfor %}
