@@ -166,7 +166,7 @@ blockquote {
     size              : 16px;
 }
 
-.allposts, .disqus {
+#allposts, .disqus {
     border-top        : 1px solid #CCC;
     clear             : both;
     float             : left;
@@ -174,16 +174,16 @@ blockquote {
     width             : 620px;
 }
 
-.allposts li {
+#allposts li {
     list-style-type   : none;
     margin-left       : -40px;
     margin-top        : 7px;
 }
 
-.allposts li a {
+#allposts li a {
     background        : none;
 }
 
-.allposts li span {
+#allposts li span {
     float             : right;
 }

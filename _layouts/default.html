@@ -39,6 +39,12 @@
                 ga.setAttribute('async', 'true');
                 document.documentElement.firstChild.appendChild(ga);
             })();
+
+            // Smooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooth scroll.
+            $("a[href^=#][href!=#]").live('click',function(e){
+                $('html,body').animate({'scrollTop': $($(this).attr('href')).offset().top+'px'});
+                e.preventDefault();
+            });
         </script>
 
         <script type="text/javascript">
@@ -65,6 +71,7 @@
             <div class="header">
                 <!-- I still believe in *one* H1 per page. -->
                 <h1><a href="/">Mind Mining Medium</a></h1>
+                <span><a href="#allposts">archives</a></span>
             </div>
 
             <div class="main">
