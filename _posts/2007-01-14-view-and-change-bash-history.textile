@@ -3,6 +3,8 @@ layout: post
 title: "View and Change bash history"
 ---
 
+bq. *Update:* Fixed a typo.
+
 Always wanted to know what you have been doing via bash? Did you know bash keeps a history of that? Here is a quick way to check it and an easy way to change the history limit.
 
 First open up a @terminal@ by going to @Applications > Accessories > Terminal@ (in Ubuntu) or press @Alt + F2@ and type in @terminal@. Now that you have a terminal open, let's get down to viewing your history.
@@ -44,4 +46,4 @@ export HISTFILESIZE=3000
 
 As you can see, the limit can be changed.
 
-Bash keeps it's own history in a file. You can view that file as stated before, or by opening @~./bash_history@
+Bash keeps it's own history in a file. You can view that file as stated before, or by opening @~/.bash_history@
