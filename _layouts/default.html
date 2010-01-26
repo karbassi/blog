@@ -42,7 +42,7 @@
 
             // Smooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooth scroll.
             $("a[href^=#][href!=#]").live('click',function(e){
-                $('html,body').animate({'scrollTop': $($(this).attr('href')).offset().top+'px'});
+                $('html,body').animate({'scrollTop': $($(this).attr('href')).offset().top+'px'}, "slow");
                 e.preventDefault();
             });
         </script>
@@ -60,7 +60,7 @@
                     // http://github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
                     $(this).attr('href', ['http://github.com/karbassi/karbassi.github.com/blob/master/_posts/',$(this).attr('href').split('http://tech.karbassi.com').pop().split('/').join('-').slice(1,-1),'.textile'].join(''));
                 });
-                
+
                 $('a').html(function(i,html){
                        return html.replace( /&amp;/gi,'<span class="amp">&amp;</span>');
                 });
