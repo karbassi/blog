@@ -21,7 +21,7 @@ title: "Mind Mining Medium"
    {% endif %}
 </div>
 
-<div class="allposts">
+<div id="allposts">
     <ul class="posts">
     {% for post in site.posts %}
         <li><span>{{ post.date | date: "%b %d, '%y"}}</span> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
