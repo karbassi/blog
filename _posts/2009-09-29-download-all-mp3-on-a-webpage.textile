@@ -3,6 +3,8 @@ layout: post
 title: "Download all mp3 on a webpage"
 ---
 
+bq. *Update:* Be sure to escape any urls are are using. Characters like @(@, @)@, and others need to be escaped. This can be done by putting a backslash before them. For example: @\(@ @\)@
+
 Ever wanted to download all the audio files off a particular webpage? You could manually click and save each one or load up terminal and use this one-liner. *Remember* to only use this for sites that are allowing you do download their content free of charge; stealing is wrong!
 
 {% highlight bash %}
