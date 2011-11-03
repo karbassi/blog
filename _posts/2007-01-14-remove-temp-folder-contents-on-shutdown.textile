@@ -9,9 +9,9 @@ A few days ago Codejacked wrote an article talking about "Delete your TEMP files
     {% highlight bash %}
     sudo cp /etc/init.d/sysklogd /etc/init.d/sysklogd_backup
     {% endhighlight %}
-# Open the file in @gedit@
+# Open the file in @vim@
     {% highlight bash %}
-    gksudo gedit /etc/init.d/sysklogd
+    sudo vim /etc/init.d/sysklogd
     {% endhighlight %}
 # Find the following section
     {% highlight bash %}

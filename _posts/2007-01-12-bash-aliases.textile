@@ -22,7 +22,7 @@ ali@ali-desktop:~$
 Now enter the following:
 
 {% highlight bash %}
-gedit .bashrc
+vim .bashrc
 {% endhighlight %}
 
 This will open up your bash configuration file. There are many options already in there and much more you can add. For what we are trying to do, find this:
@@ -51,18 +51,16 @@ if [ -f ~/.bash_aliases ]; then
 fi
 {% endhighlight %}
 
-Save the file and close @gedit@. Now back in the terminal type:
+Save the file and close @vim@. Now back in the terminal type:
 
 {% highlight bash %}
-gedit .bash_aliases
+vim .bash_aliases
 {% endhighlight %}
 
-That will open up @gedit@ again but the file you will probably see will be blank. (However, some of you might not have a blank file, that's okay). Add the following to the file.
+That will open up @vim@ again but the file you will probably see will be blank. (However, some of you might not have a blank file, that's okay). Add the following to the file.
 
 {% highlight bash %}
 alias ls='ls --color=auto'
-alias dir='ls --color=auto --format=vertical'
-alias vdir='ls --color=auto --format=long'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'

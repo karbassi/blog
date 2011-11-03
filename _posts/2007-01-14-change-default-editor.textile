@@ -10,7 +10,7 @@ First open up a @terminal@ by going to @Applications > Accessories > Terminal@ (
 Open up @.bashrc@ by typing:
 
 {% highlight bash %}
-gedit ~/.bashrc
+vim ~/.bashrc
 {% endhighlight %}
 
 Now to change your bash default editor find.
@@ -22,10 +22,10 @@ export EDITOR
 However, if you can't find that, just add this to the top.
 
 {% highlight bash %}
-export EDITOR=gedit
+export EDITOR=vim
 {% endhighlight %}
 
-Personally I like @gedit@. You can use @pico@ (@/usr/bin/pico@), @nano@ (@/usr/bin/nano@), or any other editor you like.
+Personally I like @vim@. You can use @pico@ (@/usr/bin/pico@), @nano@ (@/usr/bin/nano@), or any other editor you like.
 
 Like always, you can learn more about this by doing the following:
 
