@@ -11,16 +11,11 @@ I grabbed "W3C's sample table":http://www.w3.org/TR/html4/struct/tables.html#sam
 
 I went looking for some answers and "Mark J. Reed":http://archivist.incutio.com/viewlist/css-discuss/79793  said it best:
 
-<blockquote>
-First, you should know that due to the CSS rendering model, @<col>@ and @<colgroup>@ are both severely limited in what styling they support (at least outside of IE, which violates the CSS rendering model to provide them more power, breaking other things in the process). To be precise, there are only four things you're allowed to do with a table-column (individual or group) style:
-
+bq. First, you should know that due to the CSS rendering model, @<col>@ and @<colgroup>@ are both severely limited in what styling they support (at least outside of IE, which violates the CSS rendering model to provide them more power, breaking other things in the process). To be precise, there are only four things you're allowed to do with a table-column (individual or group) style:
 * set the background color
 * set the width
 * set up a border
 * control visibility
-
 That's it. You can't make a column bold or in a different font or give it centered text or any of the other things that seem perfectly reasonable before you dive into the detailed requirements of the CSS spec.
-
-</blockquote>
 
 So what now? Will HTML5 fix this? I rather not use some hack to do something that should work already.
