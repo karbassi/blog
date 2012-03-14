@@ -4,6 +4,7 @@ title: "Command, Option, & Shift Symbols in Unicode"
 ---
 
 bq. *Update:* Ratty in the comment noted that <notextile>&#x238B;</notextile> is actually the ESC key button not the power button.
+bq. *Update 2012:* Added more symbols.
 
 Unicode does define some other characters which are sort of Mac-specific.
 
@@ -11,6 +12,10 @@ Unicode does define some other characters which are sort of Mac-specific.
 <notextile>&#x2325;</notextile> - @&#x2325;@ - @&#8997;@ - the Option Key symbol
 <notextile>&#x21E7;</notextile> - @&#x21E7;@ - @&#8679;@ - the Shift Key symbol
 <notextile>&#x238B;</notextile> - @&#x238B;@ - @&#9099;@ - the ESC Key symbol
+<notextile>&#x21ea;</notextile> - @&#x21ea;@ - @&#8682;@ - the Capslock symbol
+<notextile>&#x23ce;</notextile> - @&#x23ce;@ - @&#9166;@ - the Return symbol
+<notextile>&#x232b;</notextile> - @&#x232b;@ - @&#9003;@ - the Delete / Backspace symbol
+
 
 *Note:* The Power Button and Shift Key are not Mac-specific. The power button is described as "broken circle with northwest arrow", or an escape character from ISO 9995-7. The shift key is described as an "outline up-arrow".
 
