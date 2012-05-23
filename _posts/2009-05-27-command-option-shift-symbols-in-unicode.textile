@@ -4,7 +4,7 @@ title: "Command, Option, & Shift Symbols in Unicode"
 ---
 
 bq. *Update:* Ratty in the comment noted that <notextile>&#x238B;</notextile> is actually the ESC key button not the power button.
-bq. *Update 2012:* Added more symbols.
+*Update 2012:* Added more symbols.
 
 Unicode does define some other characters which are sort of Mac-specific.
 
