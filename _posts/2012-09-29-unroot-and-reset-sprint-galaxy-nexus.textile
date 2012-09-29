@@ -27,5 +27,5 @@ bq. **Warning**: The following steps WILL format the device. Be sure to do a com
 {% endhighlight %}
 # Enter the following to lock the device also.
 {% highlight bash %}
-fastboot oem lock
+./fastboot oem lock
 {% endhighlight %}
