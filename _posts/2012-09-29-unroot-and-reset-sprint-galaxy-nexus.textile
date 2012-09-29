@@ -16,7 +16,6 @@ bq. **Warning**: The following steps WILL format the device. Be sure to do a com
 # Connect the device via USB to the computer.
 # Open terminal and go into the "platform-tools" directory.
 # Enter the following lines, one at a time.
-
 {% highlight bash %}
 ./fastboot flash boot boot.img
 ./fastboot flash bootloader bootloader.img
@@ -26,8 +25,7 @@ bq. **Warning**: The following steps WILL format the device. Be sure to do a com
 ./fastboot flash radio radio-lte.img
 ./fastboot -w
 {% endhighlight %}
-
-Enter the following to lock the device also.
+# Enter the following to lock the device also.
 {% highlight bash %}
 fastboot oem lock
 {% endhighlight %}
