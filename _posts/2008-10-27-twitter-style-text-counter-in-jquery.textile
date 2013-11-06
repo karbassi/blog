@@ -3,7 +3,7 @@ layout: post
 title: "Twitter style text counter in jQuery"
 ---
 
-!http://tech.karbassi.com/images/posts/2008-10-27/punch.jpg(Punch Chart on Raphaël)!:http://www.flickr.com/photos/89943077@N00/2866119475/
+!http://tech.karbassi.com/images/posts/2008-10-27/punch.jpg(Punch Chart on Rapha&euml;l)!:http://www.flickr.com/photos/89943077@N00/2866119475/
 
 I. Love. jQuery. I can't say how much I love jQuery because some people might get jealous because jQuery might out-rank them in the scale of 0 to jAWESOME!
 
