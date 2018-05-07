@@ -7,12 +7,12 @@ This is a quick one liner to find and replace strings in *nix. You can use this 
 
 In Bash:
 
-{% highlight bash %}
+```bash
 find ./ -type f -exec sed -i 's/FIND/REPLACE/g' {} \;
-{% endhighlight %}
+```
 
 Example:
 
-{% highlight bash %}
+```bash
 find ./ -type f -exec sed -i 's/signin/login/g' {} \;
-{% endhighlight %}
+```

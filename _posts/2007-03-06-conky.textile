@@ -8,7 +8,7 @@ I've been asked several times about how I set up my "Conky":http://conky.sourcef
 
 Now onto my configurations. Rather than explain each thing, I will show you how mine is set up (without the RSS, weather, and Amarok).
 
-{% highlight bash %}
+```bash
 # UBUNTU-CONKY
 # A comprehensive conky script, configured for use on
 # Ubuntu / Debian Gnome, without the need for any external scripts.
@@ -124,4 +124,4 @@ Down:${color white} ${downspeed eth0} k/s ${alignr}${color 000000}Up:${color whi
 ${downspeedgraph eth0 25,140 000000 ff0000} ${alignr}${upspeedgraph eth0 25,140 000000 00ff00}${color 000000}
 Total:${color white} ${totaldown eth0} ${alignr}${color 000000}Total:${color white} ${totalup eth0}${color 000000}
 Inbound:${color white} ${tcp_portmon 1 32767 count} ${color 000000}Outbound:${color white} ${tcp_portmon 32768 61000 count}${alignr}${color 000000}Total:${color white} ${tcp_portmon 1 65535 count}${color 000000}
-{% endhighlight %}
+```

@@ -15,7 +15,7 @@ To add to the fun, we needed visual cues, i.e. colours! After some search and no
 
 You can always grab a from the "jQuery Plugin Repository":http://plugins.jquery.com/project/twittercounter.
 
-{% highlight javascript %}
+```javascript
 /*
  * twitterCounter
  *
@@ -91,4 +91,4 @@ jQuery.fn.twitterCounter = function(options) {
       }
    }
 };
-{% endhighlight %}
+```

@@ -7,9 +7,9 @@ Let's say you have a *huge* text file with couple million lines. Now you want to
 
 In Bash:
 
-{% highlight bash %}
+```bash
 split -l 500 file.txt
-{% endhighlight %}
+```
 
 That splits up the file @file.txt@ into 500 line chunks. What is produced are files such as @xaa@, @xab@, @xac@ and so on.
 

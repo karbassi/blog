@@ -5,7 +5,7 @@ title: "Object Type in Javascript"
 
 Someone noted the interesting line that I use to find the object type.
 
-{% highlight javascript %}
+```javascript
 function getType(obj){
     if (obj === undefined) { return 'undefined'; }
     if (obj === null) { return 'null'; }
@@ -15,7 +15,7 @@ function getType(obj){
 Object.prototype.getType = function(){
     return Object.prototype.toString.call(this).split(' ').pop().split(']').shift().toLowerCase();
 };
-{% endhighlight %}
+```
 
 I posted the "QUnit test suite":http://tech.karbassi.com/static/posts/2009-12-18/type-detection-qunit.html. I've tested it in IE6-8, Safari 4, and Firefox 3.5.6. It would be greatly appreciated if you post your results.
 

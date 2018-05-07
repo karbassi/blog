@@ -12,38 +12,38 @@ First open up a @terminal@ by going to @Applications > Accessories > Terminal@ (
 
 To view your history via the terminal, type:
 
-{% highlight bash %}
+```bash
 history
-{% endhighlight %}
+```
 
 This will show the whole list.
 
 To view your history in a editor (to save for later), just type:
 
-{% highlight bash %}
+```bash
 history -w ~/history.txt
 vim ~/history.txt
-{% endhighlight %}
+```
 
 What @history -w ~/history.txt@ does is save the @history@ to a file named @history.txt@ on your home folder (@cd ~/@). The next command opens up the file for viewing in @vim@.
 
 *Note:* For more information about @history@ be sure to use the man pages by doing:
 
-{% highlight bash %}
+```bash
 man history
-{% endhighlight %}
+```
 
 Now to change your bash history length, just open up your @.bashrc@ by doing so:
 
-{% highlight bash %}
+```bash
 vim ~/.bashrc
-{% endhighlight %}
+```
 
 Once open, at the top add.
 
-{% highlight bash %}
+```bash
 export HISTFILESIZE=3000
-{% endhighlight %}
+```
 
 As you can see, the limit can be changed.
 
@@ -51,12 +51,12 @@ Bash keeps it's own history in a file. You can view that file as stated before, 
 
 You can search through your bash_history by piping your history file into grep like so:
 
-{% highlight bash %}
+```bash
 history | grep "search term here"
-{% endhighlight %}
+```
 
 Example:
 
-{% highlight bash %}
+```bash
 history | grep "wget"
-{% endhighlight %}
+```

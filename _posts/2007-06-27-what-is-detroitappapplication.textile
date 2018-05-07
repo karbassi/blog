@@ -7,12 +7,12 @@ Recently "Google Docs & Spreadsheets":http://docs.google.com released a "new ver
 
 Like always, I went snooping around to see what I could find. It's usually fun to see what they didn't implement yet. Taking a look at the "javascript source":http://docs.google.com/doclist/client/js/434292853-doclist_local.js (notice the link might change) I found something very interesting.
 
-{% highlight javascript %}
+```javascript
 ac[_P].Ca = function()
 {
    throw Error("[detroit.app.Application] Not implemented");
 };
-{% endhighlight %}
+```
 
 Apart from it being "Google Code" (no useful variable names), it shows that their is an application called "detroit.app" being developed. There is a "Google Sales office in Detroit":http://maps.google.com/maps?q=2000+Town+Center,+Suite+1900,+Southfield,+MI+(Google+Detroit), but apart from that, I could not find anything related.
 

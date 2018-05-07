@@ -9,7 +9,7 @@ While working on some homework for a mathematics course, I ran into a problem; I
 
 After a few minutes, the code turned into something much bigger than I expected. Researching to see if my formulas were correct, I continued on to create a separate file for this class. The outcome produced this:
 
-{% highlight ruby %}
+```ruby
 class Primes
   attr_reader :primes
 
@@ -41,16 +41,16 @@ class Primes
     return @primes
   end
 end
-{% endhighlight %}
+```
 
 To run, we do:
 
-{% highlight ruby %}
+```ruby
 p = Primes.new(10)
 puts p.primes
 
 # Output
-# ------
+# ----
 # 2
 # 3
 # 5
@@ -61,6 +61,6 @@ puts p.primes
 # 19
 # 23
 # 29
-{% endhighlight %}
+```
 
 I know this isn't perfect, but it was a fun 20 minute side project. If you want to improve on it, just head over to my "gist":http://gist.github.com/10159 "Ruby class to return primes".

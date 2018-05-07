@@ -14,9 +14,9 @@ That being said, I will not talk about the application itself. I am will show yo
 
 First load up Terminal (in Finder go to @Utlities > Terminal.app@). In terminal type:
 
-{% highlight bash %}
+```bash
 sudo rm /Library/LaunchDaemons/com.app4mac.CheckUpAgent.plist
-{% endhighlight %}
+```
 
 It will ask for your root password and once you type it in, it will remove the Launch Daemon.
 

@@ -9,17 +9,17 @@ Also, what if you have your system with all the applications you want and want t
 
 To output this information to a file in your home directory you would use:
 
-{% highlight bash %}
+```bash
 dpkg --get-selections > installed-software
-{% endhighlight %}
+```
 
 *Note:* @installed-software@ is actually just a text file. You can open it to view it, but don't modify it if you don't know what you're doing. It might screw up the next step.
 
 If you wanted to use the list to reinstall this software on a fresh Ubuntu setup or on another computer, just do the following steps:
 
-{% highlight bash %}
+```bash
 dpkg --set-selections < installed-software
 dselect
 sudo apt-get autoremove
 sudo apt-get autoclean
-{% endhighlight %}
+```
