@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/css/colorbox.css" media="screen">
 
         <!-- You better be using this RSS feed! -->
-        <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/karbassi/tech">
+        <link rel="alternate" type="application/atom+xml" href="//feeds.feedburner.com/karbassi/tech">
 
         <!-- Hey, iPhone users ;) -->
         <meta name="viewport" content="width=775">
@@ -23,7 +23,7 @@
 
         <!-- Much love for jQuery! -->
         <!-- Oh snap son, using jQuery 1.*. Let's hope it doesn't break your face! -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
         <!-- Colourbox, ok, fine.. Colorbox -->
         <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
@@ -56,9 +56,9 @@
                 });
 
                 $('#source > a').each(function(k, v){
-                    // http://tech.karbassi.com/2009/12/18/object-type-in-javascript/
-                    // http://github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
-                    $(this).attr('href', ['http://github.com/karbassi/karbassi.github.com/blob/master/_posts/',$(this).attr('href').split('http://tech.karbassi.com').pop().split('/').join('-').slice(1,-1),'.textile'].join(''));
+                    // tech.karbassi.com/2009/12/18/object-type-in-javascript/
+                    // github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
+                    $(this).attr('href', ['https://github.com/karbassi/karbassi.github.com/blob/master/_posts/',$(this).attr('href').split('https://tech.karbassi.com').pop().split('/').join('-').slice(1,-1),'.textile'].join(''));
                 });
 
                 $('a').html(function(i,html){
