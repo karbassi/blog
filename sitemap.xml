@@ -3,9 +3,9 @@ layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 httsp://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://tech.karbassi.com/</loc>
+        <loc>https://tech.karbassi.com/</loc>
         <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -13,7 +13,7 @@ layout: nil
 
     {% for post in site.posts %}
     <url>
-        <loc>http://tech.karbassi.com{{ post.id }}</loc>
+        <loc>https://tech.karbassi.com{{ post.id }}</loc>
         <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
