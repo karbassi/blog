@@ -7,7 +7,7 @@ title: "Better array search"
 
 During the journey of finding a better linear array search function in javascript, I decided to write my own. I decided to take a different approach. Here's the outcome.
 
-{% highlight javascript %}
+```javascript
 Array.prototype.small_search = function(search) {
     if (this[0] === search){ return 0; }
     var s = '\x00';
@@ -15,7 +15,7 @@ Array.prototype.small_search = function(search) {
     var b = a.search(search)-1;
     return a.substring(0, b).split(s).length;
 };
-{% endhighlight %}
+```
 
 
 With an array of less than 150 elements, it is much faster than Dustin Diaz's "in_array":http://www.dustindiaz.com/top-ten-javascript/ function. While they aren't the same, his can be adapted to return the index also.

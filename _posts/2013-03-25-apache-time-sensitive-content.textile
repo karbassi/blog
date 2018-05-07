@@ -5,7 +5,7 @@ title: "Apache time sensitive conditions"
 
 If you'd like to do time sensitive conditionals on Apache, the following will help you get started. This is useful if you'd like certain content to be displayed based on time.
 
-{% highlight apache %}
+```apache
 <!--#config timefmt="%Y%m%d%H%M" -->
 <!--#if expr="$DATE_LOCAL < 201303281140" -->
     <!--#include virtual="before.html"-->
@@ -14,7 +14,7 @@ If you'd like to do time sensitive conditionals on Apache, the following will he
 <!--#else-->
     <!--#include virtual="after.html"-->
 <!--#endif-->
-{% endhighlight %}
+```
 
 What we do here is set the time format to `%Y%m%d%H%M` which is year, month, day, hour, minute. For example "201303281140" for March 28th, 2013 at 11:40am.
 

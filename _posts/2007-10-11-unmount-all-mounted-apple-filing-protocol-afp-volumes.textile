@@ -9,7 +9,7 @@ I set out to fix this problem. More after the break.
 
 First, I wrote a script that will unmount all AFP mounts.
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 #
 # Unmount all Apple Filing Protocol (AFP) volumes that are currently
@@ -28,31 +28,31 @@ if [ `df | grep 'afp' | wc -l | sed 's| ||g'` != '0' ]
 then
   umount $(df | grep 'afp' | sed 's|.* /|/|')
 fi
-{% endhighlight %}
+```
 
 Save the above to any location. I have a folder in my user directory called Scripts, so this file is located at '@~/Scripts/unmountAllAFP.sh@'. Be sure to @chmod +x@ this file. You can do this like so:
 
-{% highlight bash %}
+```bash
 chmod +x unmountAllAFP.sh
-{% endhighlight %}
+```
 
 Then you will need to install "SleepWatcher":http://www.bernhard-baehr.de/ (current version as of now is 2.0.4).
 
 After this is installed, load up terminal and follow along.
 
-{% highlight bash %}
+```bash
 cd ~
 touch .sleep
 chmod 0700 .sleep
 mate .sleep
-{% endhighlight %}
+```
 
 Note that I use "TextMate":http://macromates.com/. You can replace @mate@ with @nano@.
 
 Once you have the @.sleep@ file open, add the absolute location of the script you want to run when your mac goes to sleep. For this example, we want our unmounting script to run. You should have the following in the file.
 
-{% highlight bash %}
+```bash
 ~/Scripts/unmountAllAFP.sh
-{% endhighlight %}
+```
 
 That's it. This will run every-time your mac goes to sleep.

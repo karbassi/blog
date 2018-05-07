@@ -11,14 +11,14 @@ First open up a @terminal@ by going to Applications @>@ Accessories @>@ Terminal
 
 Ubuntu users type:
 
-{% highlight bash %}
+```bash
 /usr/lib/evolution-webcal/evolution-webcal $GOOGLE_ICAL_URL
-{% endhighlight %}
+```
 
 For any other "GNOME":http://www.gnome.org/ environment:
 
-{% highlight bash %}
+```bash
 /usr/libexec/evolution-webcal $GOOGLE_ICAL_URL
-{% endhighlight %}
+```
 
 I hope you notice the difference.

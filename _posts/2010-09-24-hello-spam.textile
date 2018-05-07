@@ -7,10 +7,10 @@ A new influx of spam is making its way around the internet in the form of a very
 
 I decrypted the code and it produced:
 
-{% highlight javascript %}
+```javascript
 <meta http-equiv="refresh" content="0;url=http://BADURL.HERE" />
 <table width="100%" border="0"><tr bgcolor="#556688" align="center"><td><a href="http://www.pullsoft.com/htmlpower.htm"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="-1">This Web Page was protected by HTMLPower,  Click here to Register</font></a></td></tr></table>
-{% endhighlight %}
+```
 
 Things that I found funny about this:
 

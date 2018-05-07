@@ -13,7 +13,7 @@ Here's how I did it.
 
 *To use this script*, you need "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 add-on. Once you have it, just go here and click install: "http://userscripts.org/scripts/show/13244":http://userscripts.org/scripts/show/13244.
 
-{% highlight javascript %}
+```javascript
 // Google Photo Link with Flickr
 //
 // Version 1.0
@@ -25,7 +25,7 @@ Here's how I did it.
 // Released under the GPL license
 // http://www.gnu.org/copyleft/gpl.html
 //
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // This is a Greasemonkey user script.
 //
@@ -37,7 +37,7 @@ Here's how I did it.
 // To uninstall, go to Tools/Manage User Scripts,
 // select "Google Photo Link with Flickr", and click Uninstall.
 //
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // WHAT IT DOES:
 // After the facebook profile page is loaded, it finds all the
@@ -49,7 +49,7 @@ Here's how I did it.
 // NOTE: This does not alter, delete, edit, add, or anything else to
 //       your facebook profile. Just remove or disable this script and
 //       everything will be displayed the same as it used to
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // ==UserScript==
 
@@ -84,4 +84,4 @@ Here's how I did it.
   }
 
 }());
-{% endhighlight %}
+```

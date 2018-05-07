@@ -5,8 +5,8 @@ title: "See how many Kernel Panics your Mac has had"
 
 In bash:
 
-{% highlight bash %}
+```bash
 ls -1 /Library/Logs/PanicReporter/ | wc -l
-{% endhighlight %}
+```
 
 I've had *5*.

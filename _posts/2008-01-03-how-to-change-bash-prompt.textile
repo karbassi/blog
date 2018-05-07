@@ -13,10 +13,10 @@ First, load up Terminal and open up your @~/.bash_profile@ file. (FYI, be sure t
 
 Then type the following:
 
-{% highlight bash %}
+```bash
 export PS1="\w>: "
 export PS2=" > "
-{% endhighlight %}
+```
 
 There are a lot of possible things you can enter. Here are some of them that work well:
 

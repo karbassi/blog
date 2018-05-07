@@ -3,9 +3,9 @@ layout: post
 title: "Javascript: ucfirst"
 ---
 
-In "PHP":http://www.php.net there is "ucfirst":http://us.php.net/ucfirst whose purpose is to uppercase the first letter of the string. While working in Javascript I ran into a problem where I wanted to do this. I searched high and low and couldn't find a native function that would do this. So, I ended up writing my own. 
+In "PHP":http://www.php.net there is "ucfirst":http://us.php.net/ucfirst whose purpose is to uppercase the first letter of the string. While working in Javascript I ran into a problem where I wanted to do this. I searched high and low and couldn't find a native function that would do this. So, I ended up writing my own.
 
-{% highlight javascript %}
+```javascript
 String.prototype.ucfirst = function () {
 
     // Split the string into words if string contains multiple words.
@@ -29,7 +29,7 @@ String.prototype.ucfirst = function () {
 
 A quick example on how to use it:
 
-{% highlight javascript %}
+```javascript
 var s = "hello my name is ali karbassi.";
 
 //hello my name is ali karbassi.
@@ -43,10 +43,10 @@ document.write( s.toLowerCase() );
 
 //Hello My Name Is Ali Karbassi
 document.write( s.ucfirst() );
-{% endhighlight %}
+```
 
 *Update:* "Adam":http://tech.karbassi.com/2007/10/08/javascript-ucfirst/?dsq=8795098#comment-8795098 noted another way to do this.
 
-{% highlight javascript %}
+```javascript
 str = str.toLowerCase().replace(/\b([a-z])/gi,function(c){return c.toUpperCase()});
-{% endhighlight %}
+```

@@ -7,9 +7,9 @@ Sometimes it's very useful to know how much content is in a directory without op
 
 In Bash:
 
-{% highlight bash %}
+```bash
 du -cks * | sort -n | awk '\''BEGIN { split("KB,MB,GB,TB", Units, ","); } { u = 1;while ($1 >= 1024){$1 = $1 / 1024;u += 1;}$1 = sprintf("%.1f %s", $1, Units[u]);print $0;}'\'' | tail -11
-{% endhighlight %}
+```
 
 I would suggest adding this to your bash aliases as @ducks@.
 
@@ -37,9 +37,9 @@ Output looks something like so:
 
 *Update:* My good friend "Clayton":http://www.twitter.com/file_cabinet suggested a much simpler way. The only problem is that the output is not sorted.
 
-{% highlight bash %}
+```bash
 du -h -d 1
-{% endhighlight %}
+```
 
 The output is the whole directory. I truncated the output to show the last 11.
 
@@ -65,6 +65,6 @@ The output is the whole directory. I truncated the output to show the last 11.
 
 *Update #2:* Some systems do not accept the @-d@ flag. This can be replaced with the @--max-depth@ flag, like so:
 
-{% highlight bash %}
+```bash
 du -h --max-depth 1
-{% endhighlight %}
+```

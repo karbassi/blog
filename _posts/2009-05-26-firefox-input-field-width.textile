@@ -7,6 +7,6 @@ Hate the 2 pixel difference you get when you apply a width on your input fields 
 
 Try this in CSS:
 
-{% highlight css %}
+```css
 input, textarea, select{-moz-box-sizing: border-box;}
-{% endhighlight %}
+```

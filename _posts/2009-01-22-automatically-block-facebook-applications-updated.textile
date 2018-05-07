@@ -13,7 +13,7 @@ Surprisingly, the script works exactly like it should. I made one minor update, 
 
 Here's the code:
 
-{% highlight javascript %}
+```javascript
 // Auto-Block Facebook Apps
 //
 // Version 1.2
@@ -25,7 +25,7 @@ Here's the code:
 // Released under the GPL license
 // http://www.gnu.org/copyleft/gpl.html
 //
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // This is a Greasemonkey user script.
 //
@@ -37,7 +37,7 @@ Here's the code:
 // To uninstall, go to Tools/Manage User Scripts,
 // select "Auto-Block Facebook Apps", and click Uninstall.
 //
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // WHAT IT DOES:
 // After the facebook profile page is loaded, it finds all the
@@ -49,7 +49,7 @@ Here's the code:
 // NOTE: This does not alter, delete, edit, add, or anything else to
 //       your facebook profile. Just remove or disable this script and
 //       everything will be displayed the same as it used to
-// --------------------------------------------------------------------
+// ------------------------------------------
 //
 // ==UserScript==
 // @name        Auto-Block Facebook Apps 1.2
@@ -163,4 +163,4 @@ function getSubDomain() {
   }
   return subDomain;
 }
-{% endhighlight %}
+```

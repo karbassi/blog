@@ -11,7 +11,7 @@ However, with "reduce":https://developer.mozilla.org/En/Core_JavaScript_1.5_Refe
 
 h3. Native Function
 
-{% highlight javascript %}
+```javascript
 function flatten(array){
     var flat = [];
     for (var i = 0, l = array.length; i < l; i++){
@@ -20,20 +20,20 @@ function flatten(array){
     }
     return flat;
 }
-{% endhighlight %}
+```
 
 Usage:
 
-{% highlight javascript %}
+```javascript
 var given = [[1, [2, [3, [4, [5, [6, [7, [8, [9, [0]]]]]]]]]]];
 var value = flatten(given);
 
 // 'value' => [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-{% endhighlight %}
+```
 
 h3. Array Object Extend:
 
-{% highlight javascript %}
+```javascript
 Array.prototype.flatten = function flatten(){
    var flat = [];
    for (var i = 0, l = this.length; i < l; i++){
@@ -42,13 +42,13 @@ Array.prototype.flatten = function flatten(){
    }
    return flat;
 };
-{% endhighlight %}
+```
 
 Usage:
 
-{% highlight javascript %}
+```javascript
 var given = [[1, [2, [3, [4, [5, [6, [7, [8, [9, [0]]]]]]]]]]];
 var value = given.flatten();
 
 // 'value' => [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-{% endhighlight %}
+```
