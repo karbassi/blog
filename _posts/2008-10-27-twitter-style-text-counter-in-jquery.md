@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Twitter style text counter in jQuery"
+date: 2008-10-27
 ---
 
-!http://tech.karbassi.com/images/posts/2008-10-27/punch.jpg(Punch Chart on Rapha&euml;l)!:http://www.flickr.com/photos/89943077@N00/2866119475/
+[![1]](http://www.flickr.com/photos/89943077@N00/2866119475/)
 
 I. Love. jQuery. I can't say how much I love jQuery because some people might get jealous because jQuery might out-rank them in the scale of 0 to jAWESOME!
 
@@ -11,11 +12,11 @@ Enough drooling and leg humping. In a recent project, we needed a counter to dis
 
 Rather than control the user and annoy them, we wanted to take the method Twitter does; Warn the user, don't allow them to submit until the warning is fixed. That is, if the text counter is negative, they cannot submit, but once it's 0 or greater, it's fair game.
 
-To add to the fun, we needed visual cues, i.e. colours! After some search and no luck, I sat down and wrote this little beauty. *It's version 1 so be nice.*
+To add to the fun, we needed visual cues, i.e. colours! After some search and no luck, I sat down and wrote this little beauty. **It's version 1 so be nice.**
 
-You can always grab a from the "jQuery Plugin Repository":http://plugins.jquery.com/project/twittercounter.
+You can always grab a from the [jQuery Plugin Repository].
 
-{% highlight javascript %}
+```javascript
 /*
  * twitterCounter
  *
@@ -91,4 +92,8 @@ jQuery.fn.twitterCounter = function(options) {
       }
    }
 };
-{% endhighlight %}
+```
+
+
+[1]: http://tech.karbassi.com/images/posts/2008-10-27/punch.jpg "Punch Chart on Rapha&euml;l"
+[jQuery Plugin Repository]: http://plugins.jquery.com/project/twittercounter
