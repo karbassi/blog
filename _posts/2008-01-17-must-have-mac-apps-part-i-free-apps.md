@@ -55,7 +55,7 @@ I wouldn't suggest [Trimmit] for everyone, but for a select few, this is a must 
 [Caffeine]: http://lightheadsw.com/caffeine/
 [Firefox]: http://www.firefox.com
 [Feature by feature: Firefox vs. Safari]: http://mozillalinks.org/wp/2007/06/feature-by-feature-firefox-vs-safari/
-[research]: http://www.google.com/search?q=mac+browsers)
+[research]: http://www.google.com/search?q=mac+browsers
 [Flickr Uploadr]: http://www.flickr.com/tools/
 [Flip4Mac]: http://www.flip4mac.com/
 [Chicken of the VNC]: http://sourceforge.net/projects/cotvnc/
