@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mac Tip #1: Setting Two Sound Settings"
+date: 2007-07-11
 ---
 
 Mac Tip #1: A very simple how to on how to set two different sound settings.
