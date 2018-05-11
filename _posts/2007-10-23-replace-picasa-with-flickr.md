@@ -1,19 +1,20 @@
 ---
 layout: post
 title: "Replace Picasa with Flickr"
+date: 2007-10-23
 ---
 
-!http://tech.karbassi.com/images/posts/2007-10-23/gbar.png(Google Photo to Flickr)!
+![Google Photo to Flickr]
 
-Okay, maybe the title is a little misleading, but that's what I wanted to do. I love "Google":http://www.google.com for mostly everything, but one thing "Yahoo":http://www.yahoo.com did right was to snatch up "Flickr":http://www.flickr.com. Flickr has so much more to offer that "Picasa":http://picasaweb.google.com/ doesn't. One side note though; Flickr doesn't have a desktop photo organizer, but that's no real loss for me.
+Okay, maybe the title is a little misleading, but that's what I wanted to do. I love [Google] for mostly everything, but one thing [Yahoo] did right was to snatch up [Flickr]. Flickr has so much more to offer that [Picasa] doesn't. One side note though; Flickr doesn't have a desktop photo organizer, but that's no real loss for me.
 
 Nevertheless, I love how Google has started to add their "gbar" (Google Bar) to the top of all their applications. Even though they aren't consistent, it's nice to see, and use. After a while, I noticed myself clicking on Photo when I wanted to go to Flickr, not Picasa. Well, rather than fix my own stupid mistake and not click the link, I decided to fix the link and make it point to Flickr instead. Sorry Google, but I just enjoy Flickr more.
 
 Here's how I did it.
 
-*To use this script*, you need "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 add-on. Once you have it, just go here and click install: "http://userscripts.org/scripts/show/13244":http://userscripts.org/scripts/show/13244.
+**To use this script**, you need [Greasemonkey] add-on. Once you have it, just go here and click install: [http://userscripts.org/scripts/show/13244].
 
-{% highlight javascript %}
+```javascript
 // Google Photo Link with Flickr
 //
 // Version 1.0
@@ -62,26 +63,30 @@ Here's how I did it.
 
 // ==/UserScript==
 
-(function()
-{
-  var bar = document.getElementById('gbar').getElementsByTagName('a');
-  if(bar)
-  {
-    for (var i=0; i < bar.length; i++)
-    {
-      if(bar[i].textContent == 'Photos')
-      {
-        // Replace the link from Picasa to Flickr; Sorry Google :(
-        bar[i].href = 'http://www.flickr.com';
+(function() {
+    var bar = document.getElementById('gbar').getElementsByTagName('a');
+    if (bar) {
+        for (var i = 0; i < bar.length; i++) {
+            if (bar[i].textContent == 'Photos') {
+                // Replace the link from Picasa to Flickr; Sorry Google :(
+                bar[i].href = 'http://www.flickr.com';
 
-        // Replace the text from Photo to Flickr
-        bar[i].textContent = 'Flickr';
+                // Replace the text from Photo to Flickr
+                bar[i].textContent = 'Flickr';
 
-        // We found it, so there is no reason to continue.
-        break;
-      }
-    };
-  }
+                // We found it, so there is no reason to continue.
+                break;
+            }
+        };
+    }
 
 }());
-{% endhighlight %}
+```
+
+[Google Photo to Flickr]: http://tech.karbassi.com/images/posts/2007-10-23/gbar.png
+[Google]: http://www.google.com
+[Yahoo]: http://www.yahoo.com
+[Flickr]: http://www.flickr.com
+[Picasa]: http://picasaweb.google.com/
+[Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/748
+[http://userscripts.org/scripts/show/13244]: http://userscripts.org/scripts/show/13244
