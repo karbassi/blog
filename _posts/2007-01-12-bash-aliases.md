@@ -33,8 +33,8 @@ This will open up your bash configuration file. There are many options already i
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-#if \[ -f ~/.bash\_aliases \]; then
-#   . ~/.bash\_aliases
+#if [ -f ~/.bash_aliases ]; then
+#   . ~/.bash_aliases
 #fi
 ```
 
