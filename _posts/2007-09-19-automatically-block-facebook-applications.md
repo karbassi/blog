@@ -1,25 +1,26 @@
 ---
 layout: post
 title: "Automatically Block Facebook Applications"
+date: 2007-09-19
 ---
 
-!http://tech.karbassi.com/images/posts/2007-09-19/blocked.png(Facebook Blocked Applications Header)!
+![Facebook Blocked Applications Header]
 
-While working on the next version of my "Facebook Profile Cleaner":http://tech.karbassi.com/2007/08/27/facebook-profile-cleaner/ "Facebook Profile Cleaner", I noticed something that I was doing. Every time I would log into Facebook, I would have 3-5 new application invites. Personally, I don't care too much about them (if you didn't know already). I set out to see if I could come up with a way to automatically block them upon sign on/request.
+While working on the next version of my [Facebook Profile Cleaner], I noticed something that I was doing. Every time I would log into Facebook, I would have 3-5 new application invites. Personally, I don't care too much about them (if you didn't know already). I set out to see if I could come up with a way to automatically block them upon sign on/request.
 
-That task seemed pretty easy, but it didn't turn out to be. First of all, Facebook hides their "Block Application" button on you. The first place you see it is on the application's page itself. Second, on the "user's request page":http://facebook.com/reqs.php. it only shows an *add* and *ignore*. If you click ignore, it ignores that specific request, not any future ones. This gets real annoying when a ton of your friends decide to add (and send you requests) of the same application. And third, I was worried that maybe I would want to remove a block later. However Facebook was kind enough to provide a page to "remove" blocked applications. By going to "http://facebook.com/privacy.php?view=platform&tab=all":http://facebook.com/privacy.php?view=platform&tab=all, the second half of the page will list applications you have blocked. Notice they are listed by the order they were blocked; most recently blocked will be on the bottom.
+That task seemed pretty easy, but it didn't turn out to be. First of all, Facebook hides their "Block Application" button on you. The first place you see it is on the application's page itself. Second, on the [user's request page]. it only shows an **add** and **ignore**. If you click ignore, it ignores that specific request, not any future ones. This gets real annoying when a ton of your friends decide to add (and send you requests) of the same application. And third, I was worried that maybe I would want to remove a block later. However Facebook was kind enough to provide a page to "remove" blocked applications. By going to [http://facebook.com/privacy.php?view=platform&tab=all], the second half of the page will list applications you have blocked. Notice they are listed by the order they were blocked; most recently blocked will be on the bottom.
 
-!http://tech.karbassi.com/images/posts/2007-09-19/blocked2.png(Facebook Blocked Applications)!
+![Facebook Blocked Applications]
 
-That being said, I set out to actually *block* each application invite I get. After a few hours here and there, I finally got it fully working. The code should be clean enough for anyone interested enough to walk though. But note that if you just want the application and don't care for the actual code, then just install it and be on your merry way :).
+That being said, I set out to actually **block** each application invite I get. After a few hours here and there, I finally got it fully working. The code should be clean enough for anyone interested enough to walk though. But note that if you just want the application and don't care for the actual code, then just install it and be on your merry way :).
 
-*If you have any suggestions, comments, or concerns, be sure to comment below.*
+**If you have any suggestions, comments, or concerns, be sure to comment below.**
 
-*To use this script*, you need "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 add-on. Once you have it, just go here and click install: "http://userscripts.org/scripts/show/12393":http://userscripts.org/scripts/show/12393.
+**To use this script**, you need [Greasemonkey] add-on. Once you have it, just go here and click install: [http://userscripts.org/scripts/show/12393].
 
 Here's the code:
 
-{% highlight javascript %}
+```javascript
 // Auto-Block Facebook Apps
 //
 // Version 1.0
@@ -187,4 +188,12 @@ function getSubDomain()
   }
   return subDomain;
 }
-{% endhighlight %}
+```
+
+[Facebook Blocked Applications Header]: http://tech.karbassi.com/images/posts/2007-09-19/blocked.png
+[Facebook Blocked Applications]: http://tech.karbassi.com/images/posts/2007-09-19/blocked2.png
+[Facebook Profile Cleaner]: http://tech.karbassi.com/2007/08/27/facebook-profile-cleaner/
+[user's request page]: http://facebook.com/reqs.php
+[http://facebook.com/privacy.php?view=platform&tab=all]: http://facebook.com/privacy.php?view=platform&tab=all
+[Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/748
+[http://userscripts.org/scripts/show/12393]: http://userscripts.org/scripts/show/12393
