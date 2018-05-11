@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Facebook Profile Cleaner"
+date: 2007-08-27
 ---
 
-I use "Facebook":http://www.facebook.com the way you should; for keeping track of my friends, their information, planning events, discussing things, etc. I don't believe that Facebook should be another "MySpace":http://www.myspace.com (a popularity contest).
+I use [Facebook] the way you should; for keeping track of my friends, their information, planning events, discussing things, etc. I don't believe that Facebook should be another [MySpace] (a popularity contest).
 
+That being aside, I didn't enjoy the fact that Facebook now allows "apps" (applications/widgets) to be added to profiles. Sure, some applications are useful, but like MySpace, it gets annoying. So, with that I created a [Greasemonkey] script to remove, per se, all those apps. You can also specify others, such as "Mini-Feed", "Education", etc.
 
-That being aside, I didn't enjoy the fact that Facebook now allows "apps" (applications/widgets) to be added to profiles. Sure, some applications are useful, but like MySpace, it gets annoying. So, with that I created a "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 script to remove, per se, all those apps. You can also specify others, such as "Mini-Feed", "Education", etc.
-
-*To use this script*, you need "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 add-on. Once you have it, just go here and click install: ""http://userscripts.org/scripts/show/11747":http://userscripts.org/scripts/show/11747.
+**To use this script**, you need [Greasemonkey] add-on. Once you have it, just go here and click install: [http://userscripts.org/scripts/show/11747].
 
 I spent around 1 hour and whipped it up and it works better wonders. To me, it loads the page faster. Here's the code:
 
-{% highlight javascript %}
+```javascript
 // Facebook Profile Cleaner
 //
 // Version 1.0
@@ -102,4 +102,9 @@ for(var i = 0; i < pageDivs.length; i++)
 		pageDivs[i].style.display = 'none';
 	}
 }
-{% endhighlight %}
+```
+
+[Facebook]: http://www.facebook.com
+[MySpace]: http://www.myspace.com
+[Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/748
+[http://userscripts.org/scripts/show/11747]: http://userscripts.org/scripts/show/11747
