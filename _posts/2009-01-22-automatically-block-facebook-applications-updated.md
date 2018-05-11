@@ -1,19 +1,20 @@
 ---
 layout: post
 title: "Automatically Block Facebook Applications Updated!"
+date: 2009-01-22
 ---
 
-Two years later, I decided to take a look at my old, old, OLD Greasemonkey script to see if it was still working. This is after two minor updates on Facebook and one *major* update that changed the whole design and structure.
+Two years later, I decided to take a look at my old, old, OLD Greasemonkey script to see if it was still working. This is after two minor updates on Facebook and one **major** update that changed the whole design and structure.
 
 Surprisingly, the script works exactly like it should. I made one minor update, but after many tests, it works for me.
 
-*If you have any suggestions, comments, or concerns, be sure to comment below.* If you find any situations where it doesn't work, please leave a comment and I will check it out.
+**If you have any suggestions, comments, or concerns, be sure to comment below.** If you find any situations where it doesn’t work, please leave a comment and I will check it out.
 
-*To use this script*, you need "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748 add-on. Once you have it, just go here and click install: "http://userscripts.org/scripts/show/12393":http://userscripts.org/scripts/show/12393.
+**To use this script**, you need [Greasemonkey] add-on. Once you have it, just go here and click install: <http://userscripts.org/scripts/show/12393>.
 
-Here's the code:
+Here’s the code:
 
-{% highlight javascript %}
+```
 // Auto-Block Facebook Apps
 //
 // Version 1.2
@@ -163,4 +164,6 @@ function getSubDomain() {
   }
   return subDomain;
 }
-{% endhighlight %}
+```
+
+[Greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/748
