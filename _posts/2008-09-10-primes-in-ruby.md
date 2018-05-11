@@ -1,15 +1,16 @@
 ---
 layout: post
 title: "Primes in Ruby"
+date: 2008-09-10
 ---
 
-!http://tech.karbassi.com/images/posts/2008-09-10/discrete.jpg(26/366 Discrete Mathematical Structures)!:http://www.flickr.com/photos/10324788@N03/2227014216/
+![1]
 
 While working on some homework for a mathematics course, I ran into a problem; I needed a list of primes. I could manually produce a list of 10, maybe 20 primes but what's the fun in that. Having my trusty MacBook near me, I loaded up TextMate and started to write a simple Ruby program to produce primes.
 
 After a few minutes, the code turned into something much bigger than I expected. Researching to see if my formulas were correct, I continued on to create a separate file for this class. The outcome produced this:
 
-{% highlight ruby %}
+```ruby
 class Primes
   attr_reader :primes
 
@@ -41,11 +42,11 @@ class Primes
     return @primes
   end
 end
-{% endhighlight %}
+```
 
 To run, we do:
 
-{% highlight ruby %}
+```ruby
 p = Primes.new(10)
 puts p.primes
 
@@ -61,6 +62,9 @@ puts p.primes
 # 19
 # 23
 # 29
-{% endhighlight %}
+```
 
-I know this isn't perfect, but it was a fun 20 minute side project. If you want to improve on it, just head over to my "gist":http://gist.github.com/10159 "Ruby class to return primes".
+I know this isn't perfect, but it was a fun 20 minute side project. If you want to improve on it, just head over to my [gist].
+
+[1]: http://tech.karbassi.com/images/posts/2008-09-10/discrete.jpg "26/366 Discrete Mathematical Structures"
+[gist]: http://gist.github.com/10159 "Ruby class to return primes"
