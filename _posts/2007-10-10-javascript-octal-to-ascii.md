@@ -57,4 +57,33 @@ for(i = 1; i < c.length; i++)
 alert(d);
 ```
 
+> **2018 update**: Just for fun.
+
+```javascript
+function octToAscii(str) {
+
+  // Base 10
+  str = str
+    .split(' ')
+    .map(function(c) { return String.fromCharCode(parseInt(c, 10)); })
+    .join('');
+
+  // Base 16
+  str = str.replace(/&#x/g, '')
+    .split(';')
+    .map(function(c) { return String.fromCharCode(parseInt(c, 16)); })
+    .join('');
+
+  // Base 8
+  str = unescape(str)
+    .split('\\')
+    .map(function(c) { return String.fromCharCode(parseInt(c, 8)); })
+    .join('');
+
+  return str;
+};
+
+console.log( octToAscii(c) );
+```
+
 [fun little challenge]: http://www.thespanner.co.uk/2007/10/10/a-bit-of-fun/
