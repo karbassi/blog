@@ -1,22 +1,22 @@
 ---
 layout: post
 title: "How To: Find the size of a directory"
+date: 2009-05-28
 ---
 
 Sometimes it's very useful to know how much content is in a directory without opening a GUI interface.
 
 In Bash:
 
-{% highlight bash %}
+```bash
 du -cks * | sort -n | awk '\''BEGIN { split("KB,MB,GB,TB", Units, ","); } { u = 1;while ($1 >= 1024){$1 = $1 / 1024;u += 1;}$1 = sprintf("%.1f %s", $1, Units[u]);print $0;}'\'' | tail -11
-{% endhighlight %}
+```
 
-I would suggest adding this to your bash aliases as @ducks@.
+I would suggest adding this to your bash aliases as `ducks`.
 
 Output looks something like so:
 
-<pre>
-<code>
+```bash
 ~ > ducks
 
 4.0 KB p
@@ -32,20 +32,18 @@ Output looks something like so:
 39.5 GB total
 
 ~ > _
-</code>
-</pre>
+```
 
-*Update:* My good friend "Clayton":http://www.twitter.com/file_cabinet suggested a much simpler way. The only problem is that the output is not sorted.
+> **Update:** My good friend [Clayton] suggested a much simpler way. The only problem is that the output is not sorted.
 
-{% highlight bash %}
-du -h -d 1
-{% endhighlight %}
+```bash
+du -hd1
+```
 
 The output is the whole directory. I truncated the output to show the last 11.
 
-<pre>
-<code>
-~ > du -h -d 1 | tail -11
+```bash
+~ > du -hd 1 | tail -11
 
 6.3G    ./Desktop
 12G     ./Documents
@@ -60,11 +58,12 @@ The output is the whole directory. I truncated the output to show the last 11.
 40G     .
 
 ~ >_
-</code>
-</pre>
+```
 
-*Update #2:* Some systems do not accept the @-d@ flag. This can be replaced with the @--max-depth@ flag, like so:
+> **Update #2:** Some systems do not accept the `-d` flag. This can be replaced with the `--max-depth` flag, like so:
 
-{% highlight bash %}
-du -h --max-depth 1
-{% endhighlight %}
+```bash
+du -h —max-depth 1
+```
+
+[Clayton]: http://www.twitter.com/file_cabinet
