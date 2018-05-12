@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Snow Leopard and Bash Colors"
+date: 2009-08-31
 ---
 
-One little problem people--including myself--have been running into is bash color codes. Many @.bashrc@ files have the following (or similar):
+One little problem people—including myself—have been running into is bash color codes. Many `.bashrc` files have the following (or similar):
 
-{% highlight bash %}
+```bash
 export COLOR_NC='\e[0m' # No Color
 export COLOR_WHITE='\e[1;37m'
 export COLOR_BLACK='\e[0;30m'
@@ -23,11 +24,11 @@ export COLOR_BROWN='\e[0;33m'
 export COLOR_YELLOW='\e[1;33m'
 export COLOR_GRAY='\e[1;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
-{% endhighlight %}
+```
 
-The solution is to use @\033@ as the escape code rather than @\e@.
+The solution is to use `\033` as the escape code rather than `\e`.
 
-{% highlight bash %}
+```bash
 # Setup some colors to use later in interactive shell or scripts
 export COLOR_NC='\033[0m' # No Color
 export COLOR_WHITE='\033[1;37m'
@@ -46,4 +47,4 @@ export COLOR_BROWN='\033[0;33m'
 export COLOR_YELLOW='\033[1;33m'
 export COLOR_GRAY='\033[1;30m'
 export COLOR_LIGHT_GRAY='\033[0;37m'
-{% endhighlight %}
+```
