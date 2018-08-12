@@ -6,7 +6,6 @@ date: 2008-01-15
 
 > **Update:** It seems that [001100010010011110100001101101110011.com] doesn't exist anymore. Also, [ilovebender.com] has been bought out by [doubletwist.com]
 
-
 ![1]
 
 In [Futurama: Bender's Big Score], Bender reads off a series of 0's and 1's to travel through time. Now I won't go much into the movie, but the writers are known for their geek humor. You should really go buy the movie. It's pretty cheap at [Amazon].
@@ -20,15 +19,14 @@ If you type the actual string out into google, you will notice that the producer
 They have set up a nice auto-responder to anything that goes to bender@ilovebender.com. It reads:
 
 > Dear New Friend,
-> 
+>
 > Thank you for writing to me, Bender. It really means a lot to me. Not many humans contact me because I am so rude and impatient. You're starting to get on my nerves now. Quit buggin' me, meatbag!
-> 
+>
 > P.S. - Buy my DVD.
-> 
+>
 > Love,
 >
 > Bender
-
 
 I'm glad to see writers, producers, directors, and whoever involved taking the extra measure to make the experience more enjoyable. Now go by the DVD.
 

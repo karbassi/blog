@@ -60,47 +60,44 @@ I spent around 1 hour and whipped it up and it works better wonders. To me, it l
 
 // Comment out the ones you don't want displayed
 // Note: This list is the 'original' apps
-var AppsToKeep =
-	[
-		'box_app_2407511955',	// Mutual Friends
-		'box_app_2356318349',	// Local Network Friends
-		//'box_app_2503140832',	// Friends in Other Networks
-		'box_app_2305272732',	// Photos
-		//'box_app_2347471856',	// Notes
-		//'box_app_2361831622',	// Groups
-		//'box_app_2341989679',	// Mini-Feed
-		'box_app_2327158227',	// Information
-		'box_app_2297529396',	// Education and Work
-		//'box_app_2386512837',	// Gifts
-		'box_app_2719290516',	// The Wall
-	];
+var AppsToKeep = [
+    'box_app_2407511955',   // Mutual Friends
+    'box_app_2356318349',   // Local Network Friends
+    //'box_app_2503140832', // Friends in Other Networks
+    'box_app_2305272732',   // Photos
+    //'box_app_2347471856', // Notes
+    //'box_app_2361831622', // Groups
+    //'box_app_2341989679', // Mini-Feed
+    'box_app_2327158227',   // Information
+    'box_app_2297529396',   // Education and Work
+    //'box_app_2386512837', // Gifts
+    'box_app_2719290516',   // The Wall
+];
 
 
 // DO NOT EDIT
 // Well, unless you know what you're doing
 
-Array.prototype.inArray = function (value)
-{
-	var i = this.length;
-	while( i-- )
-	{
-		if( this[i] === value )
-		{
-			return true;
-		}
-	}
-	return false;
+Array.prototype.inArray = function (value) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === value) {
+            return true;
+        }
+    }
+    return false;
 };
 
 pageDivs = document.getElementsByTagName('div');
 
 // Delete application divs
-for(var i = 0; i < pageDivs.length; i++)
-{
-	if( ( pageDivs[i].id.indexOf( 'box_app_' ) === 0 ) && ( !AppsToKeep.inArray( pageDivs[i].id ) ) )
-	{
-		pageDivs[i].style.display = 'none';
-	}
+for (var i = 0; i < pageDivs.length; i++) {
+    if (
+        (pageDivs[i].id.indexOf('box_app_') === 0) &&
+        (!AppsToKeep.inArray(pageDivs[i].id))
+    ) {
+        pageDivs[i].style.display = 'none';
+    }
 }
 ```
 

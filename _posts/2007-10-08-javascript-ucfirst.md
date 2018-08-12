@@ -14,8 +14,8 @@ String.prototype.ucfirst = function () {
 
     for (var i = 0; i < x.length; i++) {
 
-        // Splits the word into two parts. One part being the first letter,
-        // second being the rest of the word.
+        // Splits the word into two parts. One part being the first
+        // letter, and second being the rest of the word.
         var parts = x[i].match(/(\w)(\w*)/);
 
         // Put it back together but uppercase the first letter and

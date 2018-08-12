@@ -57,7 +57,8 @@ Here's how I did it.
 // @name        Google Photo Link with Flickr 1.0
 // @author      Ali Karbassi
 // @namespace   http://www.karbassi.com
-// @description Replaces the link on the Google Bar that says Photo from going to Picasa to Flickr.
+// @description Replaces the link on the Google Bar that says Photo
+// from going to Picasa to Flickr.
 // @include     http://*.google.com*
 // @include     http://google.com*
 
@@ -68,7 +69,8 @@ Here's how I did it.
     if (bar) {
         for (var i = 0; i < bar.length; i++) {
             if (bar[i].textContent == 'Photos') {
-                // Replace the link from Picasa to Flickr; Sorry Google :(
+                // Replace the link from Picasa to Flickr;
+                // Sorry Google :(
                 bar[i].href = 'http://www.flickr.com';
 
                 // Replace the text from Photo to Flickr

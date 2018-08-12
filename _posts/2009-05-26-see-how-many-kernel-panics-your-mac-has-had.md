@@ -10,7 +10,7 @@ In bash:
 ls -1 /Library/Logs/PanicReporter/ | wc -l
 ```
 
-or 
+or
 
 ```bash
 ls -1 /Library/Logs/DiagnosticReports/ | wc -l

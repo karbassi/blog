@@ -63,7 +63,12 @@ Here's the code:
 // @name        Auto-Block Facebook Apps 1.0
 // @author      Ali Karbassi
 // @namespace   http://www.karbassi.com
-// @description This script will block app invites sent to you by friends. After the facebook profile page is loaded, it finds all the applications that your friends have invited you to and blocks them. Do not worry though, you can go to http://facebook.com/privacy.php?view=platform&tab=all and unblock them.
+// @description This script will block app invites sent to you by
+// friends. After the facebook profile page is loaded, it finds all
+// the applications that your friends have invited you to and blocks
+// them. Do not worry though, you can go to
+// http://facebook.com/privacy.php?view=platform&tab=all and
+// unblock them.
 // @include     http://facebook.com/home.php*
 // @include     http://*.facebook.com/home.php*
 // @include     http://facebook.com/reqs.php*
@@ -79,10 +84,8 @@ var subDomain = getSubDomain();
 var anchors = document.getElementsByTagName('a');
 var appReqExp = /reqs\.php#confirm_(\d*)_(.*)/;
 
-for( var i = 0; i < anchors.length; i++ )
-{
-  if( appReqExp.exec( anchors[i].href ) )
-  {
+for (var i = 0; i < anchors.length; i++) {
+  if (appReqExp.exec(anchors[i].href)) {
     prep(RegExp.$1, anchors[i]);
   }
 }
@@ -95,79 +98,79 @@ removeNotifications();
 // PLEASE DO NOT TOUCH IF YOU HAVE NO IDEA WHAT YOU'RE DOING. YOU MIGHT BREAK IT.
 
 // Prepares everything. When things are correct, it calls BlockApp.
-function prep(appID, appNode)
-{
+function prep(appID, appNode) {
   var postformMatch = /name="post_form_id" value="(\w+)"/;
   var post_form_id = 0;
 
-  GM_xmlhttpRequest(
-    {
-      method: 'GET',
-      url: 'http://www.facebook.com/apps/block.php?id=' + appID + '&action=block',
-      headers:
-      {
-        'User-Agent': window.navigator.userAgent,
-        'Accept': 'text/html',
-      },
-      onload: function(responseDetails)
-      {
-        if( (responseDetails.status == 200) && (responseDetails.responseText.indexOf('This will not prevent you from seeing') != -1) )
-        {
-          // Show that we are working on it.
-          appNode.removeAttribute('href');
-          appNode.innerHTML = 'Reading confirmation page...';
+  GM_xmlhttpRequest({
+    method: 'GET',
+    url: 'http://www.facebook.com/apps/block.php?id=' + appID + '&action=block',
+    headers: {
+      'User-Agent': window.navigator.userAgent,
+      'Accept': 'text/html',
+    },
+    onload: function(responseDetails) {
+      if (
+        (responseDetails.status == 200) &&
+        (responseDetails.responseText.indexOf(
+          'This will not prevent you from seeing'
+        ) != -1)
+      ) {
+        // Show that we are working on it.
+        appNode.removeAttribute('href');
+        appNode.innerHTML = 'Reading confirmation page...';
 
-          postformMatch.exec( responseDetails.responseText );
+        postformMatch.exec( responseDetails.responseText );
 
-          // Calls function to block the app
-          BlockApp(RegExp.$1, appID, appNode);
-        }
+        // Calls function to block the app
+        BlockApp(RegExp.$1, appID, appNode);
       }
     }
-  );
+  });
 }
 
-function BlockApp(post_form_id, appID, appNode)
-{
-  GM_xmlhttpRequest(
-    {
-      method: 'POST',
-      url: 'http://' + subDomain + 'facebook.com/apps/block.php?id=' + appID + '&action=block',
-      headers:
-      {
-        'User-Agent': window.navigator.userAgent,
-        'Accept': 'text/xml',
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      data:'post_form_id=' + post_form_id + '&save=1',
-      onload: function (responseDetails)
-      {
-        if( (responseDetails.status == 200) && (responseDetails.responseText.indexOf('You have blocked this application') != -1) )
-        {
+function BlockApp(post_form_id, appID, appNode) {
+  GM_xmlhttpRequest({
+    method: 'POST',
+    url: (
+      'http://' + subDomain + 'facebook.com/apps/block.php?id=' +
+      appID + '&action=block'
+    ),
+    headers: {
+      'User-Agent': window.navigator.userAgent,
+      'Accept': 'text/xml',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    data: 'post_form_id=' + post_form_id + '&save=1',
+    onload: function (responseDetails) {
+      if (
+        (responseDetails.status == 200) &&
+        (responseDetails.responseText.indexOf(
+          'You have blocked this application'
+        ) != -1)
+      ) {
           appNode.innerHTML = 'App Blocked!'
           appNode.href = 'http://facebook.com/reqs.php';
         }
-      },
-      onerror: function (responseDetails)
-      {
-        appNode.removeAttribute('href');
-        appNode.innerHTML = 'App Block failed!';
-      }
+    },
+    onerror: function (responseDetails) {
+      appNode.removeAttribute('href');
+      appNode.innerHTML = 'App Block failed!';
     }
-  );
+  });
 }
 
-function removeNotifications()
-{
+function removeNotifications() {
   var inputs = document.getElementsByTagName('input');
-  for (var i = 0; i < inputs.length; i++)
-  {
-    if( inputs[i].value == 'Ignore' )
-    {
-      for( var j = 0; j < inputs[i].attributes.length; j++)
-      {
-        if( (inputs[i].attributes[j].nodeName == 'onclick') && (inputs[i].attributes[j].nodeValue.indexOf('click_add_platform_app') != -1) )
-        {
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == 'Ignore') {
+      for (var j = 0; j < inputs[i].attributes.length; j++) {
+        if (
+          (inputs[i].attributes[j].nodeName == 'onclick') &&
+          (inputs[i].attributes[j].nodeValue.indexOf(
+            'click_add_platform_app'
+          ) != -1)
+        ) {
           var js = (inputs[i].attributes[j].nodeValue).split(' ');
           js.shift();
           js = js.join(' ');
@@ -178,12 +181,10 @@ function removeNotifications()
   }
 }
 
-function getSubDomain()
-{
+function getSubDomain() {
   var subDomainRegExp = /http:\/\/(.*\.)facebook\.com/;
   var subDomain = '';
-  if (subDomainRegExp.exec(document.location) != 0)
-  {
+  if (subDomainRegExp.exec(document.location) != 0) {
     subDomain = RegExp.$1;
   }
   return subDomain;

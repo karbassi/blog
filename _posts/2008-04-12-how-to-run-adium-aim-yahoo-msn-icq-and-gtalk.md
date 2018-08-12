@@ -1,3 +1,9 @@
+---
+layout: post
+title: "How to run Adium (AIM, Yahoo, MSN, ICQ, and  GTalk) behind a firewall"
+date: 2008-04-12
+---
+
 Being that not all locations allow all ports to be accessed through their gateway to the internet, sometimes you will run into problems in connecting to your <abbr title="Instant Messaging">IM</abbr> programs such as [iChat] or, even better, [Adium]. The following steps should work for [Pidgin].
 
 Now, we know that all internet access points (WiFi spots, hotels, etc)  will allow Port 80. This is because it is the port most web servers output websites. You can see what other ports are used for on Wikipedia's [List of TCP and UDP port] numbers page.

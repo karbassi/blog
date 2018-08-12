@@ -11,23 +11,23 @@ new update, it is considered "broken."
 
 ### Here’s how to fix it:
 
-1.  Quit Safari.
+1. Quit Safari.
 
-2.  Navigate to `/Library/Application Support/SIMBL/Plugins/PithHelmet.bundle.`
+2. Navigate to `/Library/Application Support/SIMBL/Plugins/PithHelmet.bundle.`
 
-3.  Control click to show package contents.
+3. Control click to show package contents.
 
-4.  Open bundle and go to Contents.
+4. Open bundle and go to Contents.
 
-5.  Double click or open `info.plist` in your favorite text editor.
+5. Double click or open `info.plist` in your favorite text editor.
 
-6.  Change `MaxBundleVersion` to `5525.13`. This is to match the current Safari version/build.
+6. Change `MaxBundleVersion` to `5525.13`. This is to match the current Safari version/build.
 
     ```xml
     <key>MaxBundleVersion</key>
     <string>5525.13</string>
     ```
 
-7.  Save and relaunch Safari.
+7. Save and relaunch Safari.
 
 [reasoning behind this]: http://daringfireball.net/2007/10/un_in_unsupported

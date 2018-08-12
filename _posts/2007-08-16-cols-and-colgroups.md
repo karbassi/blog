@@ -4,17 +4,15 @@ title: "Cols and Colgroups"
 date: 2007-08-16
 ---
 
-Who loves working with tables in HTML(Hypertext Markup Language) or XHTML(Extensible HyperText Markup Language)? 
+Who loves working with tables in HTML(Hypertext Markup Language) or XHTML(Extensible HyperText Markup Language)?
 
 *`<sarcasm>` I know I do! `</sarcasm>`*
 
 Recently I've been working with trying to get a column in a table to format correctly. It's something very simple; I have 3 columns and X rows. I want the first column to be aligned left while the other columns to aligned right. Also, I want to style each column differently. Going through [W3C]'s [HTML 4.01 Specification], I found [column groups]. After a few minutes of reading, it looked like exactly what I needed.
 
-
 I grabbed [W3C's sample table] to test with. Wow, that didn't work. I dumped their code into a page (and fixed it so it validates with XHTML 1.0 Strict) so you can see it's not what they say it should be. Surprisingly it doesn't work the way they say it does.
 
-
-I went looking for some answers and [Mark J. Reed]  said it best:
+I went looking for some answers and [Mark J. Reed] said it best:
 
 > First, you should know that due to the CSS rendering model, `<col>` and `<colgroup>` are both severely limited in what styling they support (at least outside of IE, which violates the CSS rendering model to provide them more power, breaking other things in the process). To be precise, there are only four things you're allowed to do with a table-column (individual or group) style:
 >

@@ -8,14 +8,14 @@ date: 2009-05-12
 
 ### Quick way
 
-#### Disable:
+#### Disable
 
 ```bash
 sudo launchctl unload -w "/System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
 sudo launchctl unload -w "/System/Library/LaunchAgents/com.apple.Spotlight.plist"
 ```
 
-#### re-enable:
+#### Re-enable
 
 ```bash
 sudo launchctl load -w "/System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
@@ -24,29 +24,29 @@ sudo launchctl load -w "/System/Library/LaunchAgents/com.apple.Spotlight.plist"
 
 ### Explanation
 
-#### Stop and disable the background server:
+#### Stop and disable the background server
 
-##### Kill the Daemon:
+##### Kill the Daemon
 
 ```bash
 sudo launchctl unload -w "/System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
 ```
 
-##### Re-enable the Daemon:
+##### Re-enable the Daemon
 
 ```bash
 sudo launchctl load -w "/System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
 ```
 
-#### Stop and disable the spotlight application itself:
+#### Stop and disable the spotlight application itself
 
-##### Kill the Agent:
+##### Kill the Agent
 
 ```bash
 sudo launchctl unload -w "/System/Library/LaunchAgents/com.apple.Spotlight.plist"
 ```
 
-##### Re-enable the Agent:
+##### Re-enable the Agent
 
 ```bash
 sudo launchctl load -w "/System/Library/LaunchAgents/com.apple.Spotlight.plist"
@@ -68,7 +68,7 @@ Now we need to stop the agent for the user and everyone else.
 sudo launchctl unload -w "/System/Library/LaunchAgents/com.apple.Spotlight.plist"
 ```
 
-### The re-enable Spotlight back again:
+### The re-enable Spotlight back again
 
 If you need to re-enable the process, you can run the following line.
 

@@ -14,7 +14,7 @@ Surprisingly, the script works exactly like it should. I made one minor update, 
 
 Here’s the code:
 
-```
+```javascript
 // Auto-Block Facebook Apps
 //
 // Version 1.2
