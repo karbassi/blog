@@ -6,8 +6,7 @@ title: "Mind Mining Medium"
 
 {% for post in site.posts limit:5 %}
     <article>
-        <h2><a href="{{ post.url | relative_url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <h5 class="datetime">{{ post.date | date: "%B %d, %Y" }}</h5>
+        <h2><a href="{{ post.url | relative_url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
         {{ post.content }}
     </article>
 {% endfor %}

@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div class="post">
-    <div class="datetime">{{ page.date | date: "%B %d, %Y" }}</div>
-    <h2 class="entry-title"><a href="{{ page.url | relative_url }}" data-url-type="bookmark" title="{{ page.title }}">{{ page.title }}</a></h2>
+<article>
+    <h2>{{ page.title }}</h2>
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {{ content }}
 </div>
 
