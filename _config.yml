@@ -1,2 +1,53 @@
-paginate: 3
-permalink: pretty
+# Site settings
+title: "Mind Mining Medium"
+author: "Ali Karbassi"
+description: ""
+keywords: ""
+# url: "http://karbassi.github.io/blog"
+baseurl: /blog
+permalink: /:title/
+# permalink: /blog/:title/
+# permalink: pretty
+google_analytics: ""
+disqus:
+  shortname: ""
+
+# Default paths
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+# Build settings
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+
+
+include:
+  - "_pages"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - CNAME
+  - "*.sh"
+  - readme.md
+  - .DS_Store
+
+
+timezone: America/Chicago
+encoding: utf-8
+

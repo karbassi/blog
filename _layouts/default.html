@@ -1,86 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>{{ page.title }}</title>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-        <!-- I'm so META! -->
-        <meta charset="utf-8">
-        <meta name="author" content="Ali Karbassi">
+  {%- include head.html -%}
 
-        <!-- Let's add some prettiness. -->
-        <link rel="stylesheet" href="/css/screen.css" media="screen">
-        <link rel="stylesheet" href="/css/highlight.css" media="all">
-        <link rel="stylesheet" href="/css/colorbox.css" media="screen">
+  <body>
 
-        <!-- You better be using this RSS feed! -->
-        <link rel="alternate" type="application/atom+xml" href="//feeds.feedburner.com/karbassi/tech">
+    {%- include header.html -%}
 
-        <!-- Hey, iPhone users ;) -->
-        <meta name="viewport" content="width=775">
+    <main>
+        {{ content }}
+    </main>
 
-        <!-- Seriously, upgrade to IE8 or even a Safari, Firefox, or Opera! -->
-        <!--[if lte IE 8]><script>(function(){var e="abbr,article,aside,audio,canvas,datalist,details,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i]);}}());</script><![endif]-->
+    {%- include footer.html -%}
 
-        <!-- Much love for jQuery! -->
-        <!-- Oh snap son, using jQuery 1.*. Let's hope it doesn't break your face! -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  </body>
 
-        <!-- Colourbox, ok, fine.. Colorbox -->
-        <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
-
-        <!-- I bow down to my overlord, Google. -->
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-51850-6']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script');
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                ga.setAttribute('async', 'true');
-                document.documentElement.firstChild.appendChild(ga);
-            })();
-
-            // Smooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooth scroll.
-            $("a[href^=#][href!=#]").live('click',function(e){
-                $('html,body').animate({'scrollTop': $($(this).attr('href')).offset().top+'px'}, "slow");
-                e.preventDefault();
-            });
-        </script>
-
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-
-                // Colorbox images ;)
-                $(".post img").each(function(k, v){
-                    $(v).colorbox({transition:"elastic", href: $(v).attr('src') });
-                });
-
-                $('#source > a').each(function(k, v){
-                    // tech.karbassi.com/2009/12/18/object-type-in-javascript/
-                    // github.com/karbassi/karbassi.github.com/blob/master/_posts/2009-12-18-object-type-in-javascript.textile
-                    $(this).attr('href', ['https://github.com/karbassi/karbassi.github.com/blob/master/_posts/',$(this).attr('href').split('https://tech.karbassi.com').pop().split('/').join('-').slice(1,-1),'.textile'].join(''));
-                });
-
-                $('a').html(function(i,html){
-                       return html.replace( /&amp;/gi,'<span class="amp">&amp;</span>');
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <!-- Wraaaaaaaaaaaaaper -->
-        <div class="wrapper">
-
-            <!-- I'll switch over to header when it won't break my styles badly. -->
-            <div class="header">
-                <!-- I still believe in *one* H1 per page. -->
-                <h1><a href="/">Mind Mining Medium</a></h1>
-                <span><a href="#allposts">archives</a></span>
-            </div>
-
-            <div class="main">
-                {{ content }}
-            </div>
-        </div>
-    </body>
 </html>
