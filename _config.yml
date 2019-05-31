@@ -39,13 +39,14 @@ include:
   - "_pages"
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - CNAME
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor"
+  - "CNAME"
   - "*.sh"
-  - readme.md
-  - .DS_Store
+  - "readme.md"
+  - ".DS_Store"
+  - ".git*"
 
 
 timezone: America/Chicago

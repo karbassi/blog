@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  {%- include head.html -%}
+  {%- seo -%}
 
-  <body>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/vs.css' | relative_url }}">
 
-    {%- include header.html -%}
+  {%- include google-analytics.html -%}
+  {%- feed_meta -%}
+</head>
+<body>
 
-    <main>
-        {{ content }}
-    </main>
+  <header role="banner">
+    <h1><a href="{{ "/" | relative_url }}">Mind Mining Medium</a></h1>
+    <!-- <span><a href="#allposts">archives</a></span> -->
+  </header>
 
-    {%- include footer.html -%}
+  <main>
+    {{ content }}
+  </main>
 
-  </body>
+  <footer>
+    <h2>All posts</h2>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li><span><a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
 
+</body>
 </html>

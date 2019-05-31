@@ -1,8 +1,0 @@
-<footer>
-  <h2>All posts</h2>
-  <ul class="posts">
-  {% for post in site.posts %}
-      <li><span><a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-</footer>
